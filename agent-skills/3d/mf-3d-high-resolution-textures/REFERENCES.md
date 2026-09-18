@@ -1,5 +1,0 @@
-- Seijaku texture loading and caching
-- Seijaku foliage mip preparation
-- [Three.js Texture](https://threejs.org/docs/pages/Texture.html)
-- [Three.js KTX2Loader](https://threejs.org/docs/pages/KTX2Loader.html)
-- [Three.js color-management source](https://github.com/mrdoob/three.js/blob/dev/manual/pages/color-management.html)

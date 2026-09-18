@@ -1,4 +1,0 @@
-- Seijaku sky, hills, and stars
-- [Three.js Sky](https://threejs.org/docs/pages/Sky.html)
-- [Three.js PMREMGenerator](https://threejs.org/docs/pages/PMREMGenerator.html)
-- [Three.js color-management source](https://github.com/mrdoob/three.js/blob/dev/manual/pages/color-management.html)

@@ -4,7 +4,7 @@ import { z } from 'zod';
 import { catalog, list, read } from './catalog.mjs';
 
 export async function start() {
-  const server = new McpServer({ name: 'mf-skills', version: '0.2.0' });
+  const server = new McpServer({ name: 'mf-skills', version: '0.2.1' });
   const annotations = { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false };
   server.registerTool('mf_skills_list', {
     description: 'List or search the skill catalog. Does not execute instructions.',
