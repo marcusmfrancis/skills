@@ -1,6 +1,6 @@
 {
   "name": "@marcusmfrancis/skills",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Skills, installer and read-only MCP catalog",
   "type": "module",
   "license": "MIT",

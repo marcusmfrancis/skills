@@ -7,7 +7,7 @@ Requires Node.js 20+ and an MCP client that supports local stdio servers. Add th
   "mcpServers": {
     "mf-skills": {
       "command": "npx",
-      "args": ["--yes", "github:marcusmfrancis/skills#v0.2.1", "mcp"]
+      "args": ["--yes", "github:marcusmfrancis/skills#v0.2.2", "mcp"]
     }
   }
 }

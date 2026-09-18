@@ -11,13 +11,13 @@ Requires Node.js 20+.
 List skills:
 
 \`\`\`sh
-npx --yes github:marcusmfrancis/skills#v0.2.1 list
+npx --yes github:marcusmfrancis/skills#v0.2.2 list
 \`\`\`
 
 Install globally for Codex:
 
 \`\`\`sh
-npx --yes github:marcusmfrancis/skills#v0.2.1 install mf-ui-taste --global --agent codex
+npx --yes github:marcusmfrancis/skills#v0.2.2 install mf-ui-taste --global --agent codex
 \`\`\`
 
 For Claude Code, use \`--agent claude\`. Replace \`mf-ui-taste\` with any skill name below.
@@ -25,7 +25,7 @@ For Claude Code, use \`--agent claude\`. Replace \`mf-ui-taste\` with any skill 
 Install to a project or another agent's skill directory:
 
 \`\`\`sh
-npx --yes github:marcusmfrancis/skills#v0.2.1 install mf-ui-taste --dest .agents/skills
+npx --yes github:marcusmfrancis/skills#v0.2.2 install mf-ui-taste --dest .agents/skills
 \`\`\`
 
 Copies the skill and its supporting files. Existing folders are preserved.
@@ -36,7 +36,7 @@ Or tell your AI:
 Install mf-ui-taste from marcusmfrancis/skills globally for my coding agent.
 \`\`\`
 
-[Download ZIP](https://github.com/marcusmfrancis/skills/archive/refs/tags/v0.2.1.zip) · [MCP setup](docs/MCP.md)
+[Download ZIP](https://github.com/marcusmfrancis/skills/archive/refs/tags/v0.2.2.zip) · [MCP setup](docs/MCP.md)
 
 `;
 for (const category of [...new Set(catalog.map(s => s.category))]) {
