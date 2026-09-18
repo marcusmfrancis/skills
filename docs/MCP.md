@@ -1,35 +1,32 @@
-# MCP setup
+# Connect
 
-Requires Node.js 20+ and an MCP client that supports local stdio servers. Add this entry using your client's MCP configuration interface:
+Remote URL: `https://marcusmfrancis.com/mcp`
 
-```json
-{
-  "mcpServers": {
-    "mf-skills": {
-      "command": "npx",
-      "args": ["--yes", "github:marcusmfrancis/skills#v0.2.2", "mcp"]
-    }
-  }
-}
+Claude Code:
+
+```sh
+claude mcp add --transport http skills https://marcusmfrancis.com/mcp
 ```
 
-Clients use different configuration formats; the command and arguments above are the portable connection details, not a universal configuration-file location.
+For another client that supports remote MCP, add the URL through its MCP settings. No account is required to read the public library.
 
-To avoid fetching at connection time, clone this repository, run `npm ci`, and use `node` as the command with the absolute path to `bin/mf-skills.mjs` and `mcp` as its arguments.
+Local server configuration for clients that support stdio:
 
-## Available capabilities
+```json
+{"mcpServers":{"skills":{"command":"npx","args":["--yes","github:marcusmfrancis/skills#main","mcp"]}}}
+```
 
-- `mf_skills_list`: list all skills or filter by `query` across names, categories, descriptions and tags.
-- `mf_skills_read`: retrieve a skill with its exact `name`.
-- Resources: one `mf-skill:///mf-...` Markdown resource per skill.
+Requires Node.js 20+. Restart the local server to load a newer catalog. Pin a release tag instead of `main` when you need a fixed version.
 
-Try: "Find the skill for analyzing a UI recording, read it and use it to plan the analysis of my supplied video."
+Ask your AI: "Find the skill for my task, read it, and ask the setup questions before implementing."
 
-The server only reads the bundled catalog and skill files. It does not install skills, run their instructions, access your accounts or deploy. The client decides whether and how to use the returned guidance. No authentication secrets are required.
+Local tools: `mf_skills_list`, `mf_skills_read`, `mf_skills_files`. The read tool accepts an optional `file` for supporting instructions.
+Remote tools: `skills/list`, `resources/search`, `skills/read`. Read a personal skill by its `mf-` slug; its catalog entry includes install/update commands and file names. The remote read tool also accepts `file`.
 
-## Troubleshooting
+MCP reads guidance. Installation and updates happen on your computer through the CLI, not on the website:
 
-- If `npx` is not found, configure its full path in the client or use the local Node command.
-- If GitHub/package download fails, check network access and that the pinned release exists; use the cloned option if needed.
-- If the process exits with an unknown-command error, pass `mcp` as the final argument.
-- This is stdio, not an HTTP URL. A remote-only client cannot connect directly to it.
+```sh
+npx --yes github:marcusmfrancis/skills#main fetch
+npx --yes github:marcusmfrancis/skills#main install mf-3d-web-experiences --global --agent codex
+npx --yes github:marcusmfrancis/skills#main update mf-3d-web-experiences --global --agent codex
+```

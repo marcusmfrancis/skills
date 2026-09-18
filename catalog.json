@@ -112,6 +112,154 @@
       ],
       "preview": null,
       "validation": "Editorially reviewed; installer and MCP delivery tested. Downstream implementation outcomes depend on the consuming project."
+    },
+    {
+      "name": "mf-3d-web-experiences",
+      "title": "3D web experiences",
+      "description": "Plan and build scroll-driven 3D websites, product viewers, and interactive scenes.",
+      "category": "3d",
+      "tags": [
+        "3D",
+        "scroll",
+        "React Three Fiber"
+      ],
+      "path": "agent-skills/3d/mf-3d-web-experiences",
+      "sources": [
+        "https://github.com/pmndrs/react-three-fiber",
+        "https://threejs.org/"
+      ],
+      "validation": "Public workflow reviewed; distribution checks are separate from downstream project outcomes."
+    },
+    {
+      "name": "mf-3d-threejs",
+      "title": "Three.js development",
+      "description": "Build and debug Three.js scenes, cameras, materials, assets, shaders, and rendering performance.",
+      "category": "3d",
+      "tags": [
+        "Three.js",
+        "WebGL",
+        "WebGPU"
+      ],
+      "path": "agent-skills/3d/mf-3d-threejs",
+      "sources": [
+        "https://threejs.org/docs/",
+        "https://github.com/mrdoob/three.js"
+      ],
+      "validation": "Public workflow reviewed; distribution checks are separate from downstream project outcomes."
+    },
+    {
+      "name": "mf-image-to-code",
+      "title": "Image to code",
+      "description": "Turn screenshots and visual references into responsive code that fits the existing project.",
+      "category": "ui",
+      "tags": [
+        "screenshots",
+        "React",
+        "reference"
+      ],
+      "path": "agent-skills/ui/mf-image-to-code",
+      "sources": [
+        "Adapted from octane-image-to-code; public workflow removes private service requirements."
+      ],
+      "validation": "Public workflow reviewed; distribution checks are separate from downstream project outcomes."
+    },
+    {
+      "name": "mf-before-launch",
+      "title": "Before launch",
+      "description": "Check launch readiness, support, privacy disclosures, feedback, and the real product journey.",
+      "category": "development",
+      "tags": [
+        "launch",
+        "support",
+        "privacy"
+      ],
+      "path": "agent-skills/development/mf-before-launch",
+      "sources": [
+        "Adapted from octane-launch."
+      ],
+      "validation": "Public workflow reviewed; distribution checks are separate from downstream project outcomes."
+    },
+    {
+      "name": "mf-storage-cleanup",
+      "title": "Local storage cleanup",
+      "description": "Find disk usage and safely reclaim selected caches and build artifacts without deleting personal data.",
+      "category": "development",
+      "tags": [
+        "storage",
+        "macOS",
+        "cleanup"
+      ],
+      "path": "agent-skills/development/mf-storage-cleanup",
+      "sources": [
+        "Rewritten from octane-local-storage-cleanup with explicit scope and recovery boundaries."
+      ],
+      "validation": "Public workflow reviewed; distribution checks are separate from downstream project outcomes."
+    },
+    {
+      "name": "mf-motion",
+      "title": "Motion",
+      "description": "Design consistent, interruptible interface motion with accessible reduced-motion behavior.",
+      "category": "ui",
+      "tags": [
+        "animation",
+        "springs",
+        "interaction"
+      ],
+      "path": "agent-skills/ui/mf-motion",
+      "sources": [
+        "Adapted from octane-motion.",
+        "https://motion.dev/docs/react-installation"
+      ],
+      "validation": "Public workflow reviewed; distribution checks are separate from downstream project outcomes."
+    },
+    {
+      "name": "mf-liveline",
+      "title": "Liveline",
+      "description": "Add live charts with clear data states, accessible summaries, and realistic streaming behavior.",
+      "category": "ui",
+      "tags": [
+        "charts",
+        "realtime",
+        "React"
+      ],
+      "path": "agent-skills/ui/mf-liveline",
+      "sources": [
+        "Adapted from octane-liveline.",
+        "https://github.com/benjitaylor/liveline"
+      ],
+      "validation": "Public workflow reviewed; distribution checks are separate from downstream project outcomes."
+    },
+    {
+      "name": "mf-ui-cleanup",
+      "title": "UI cleanup",
+      "description": "Improve an existing interface\u2019s consistency, readability, responsiveness, and interaction states.",
+      "category": "ui",
+      "tags": [
+        "UI",
+        "cleanup",
+        "accessibility"
+      ],
+      "path": "agent-skills/ui/mf-ui-cleanup",
+      "sources": [
+        "Adapted from octane-ui-playbook."
+      ],
+      "validation": "Public workflow reviewed; distribution checks are separate from downstream project outcomes."
+    },
+    {
+      "name": "mf-ux",
+      "title": "UX",
+      "description": "Simplify user journeys, onboarding, contextual panels, and decision-making while preserving useful capability.",
+      "category": "ui",
+      "tags": [
+        "UX",
+        "onboarding",
+        "product"
+      ],
+      "path": "agent-skills/ui/mf-ux",
+      "sources": [
+        "Adapted from octane-ux."
+      ],
+      "validation": "Public workflow reviewed; distribution checks are separate from downstream project outcomes."
     }
   ]
 }

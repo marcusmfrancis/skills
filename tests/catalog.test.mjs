@@ -11,7 +11,7 @@ import { catalog, root, read, install, globalDestination } from '../src/catalog.
 test('every registered skill is portable and frontmatter matches its folder', async () => {
  assert.equal(new Set(catalog.map(s=>s.name)).size,catalog.length);
  for(const skill of catalog) {
-  assert.match(skill.name,/^mf-[a-z0-9]+(?:-[a-z0-9]+)+$/);
+  assert.match(skill.name,/^mf-[a-z0-9]+(?:-[a-z0-9]+)*$/);
   assert.ok(skill.path.endsWith('/'+skill.name));
   const text=await read(skill.name);
   assert.ok(text.startsWith(`---\nname: ${skill.name}\ndescription: `));
@@ -51,7 +51,7 @@ test('real MCP client lists, searches and reads all skills and resources',async(
  try {
   await client.connect(transport);
   const tools=(await client.listTools()).tools;
-  assert.deepEqual(tools.map(t=>t.name).sort(),['mf_skills_list','mf_skills_read']);
+  assert.deepEqual(tools.map(t=>t.name).sort(),['mf_skills_files','mf_skills_list','mf_skills_read']);
   assert.ok(tools.every(t=>t.annotations.readOnlyHint));
   const all=await client.callTool({name:'mf_skills_list',arguments:{}});
   assert.equal(JSON.parse(all.content[0].text).length,catalog.length);
