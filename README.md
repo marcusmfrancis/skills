@@ -44,7 +44,7 @@ For any coding agent, ask it to read the installed SKILL.md and follow it for th
 |---|---|
 | [mf-brand-svg-logos](agent-skills/brand/mf-brand-svg-logos/SKILL.md) | Use official SVG brand marks or Simple Icons without distorting geometry, inventing identity assets or implying endorsement. |
 
-### Ui
+### UI
 
 | Skill | Use it for |
 |---|---|

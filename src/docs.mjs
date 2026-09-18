@@ -26,7 +26,7 @@ For any coding agent, ask it to read the installed SKILL.md and follow it for th
 `;
 let body=intro;
 for (const category of [...new Set(catalog.map(s=>s.category))]) {
- body += `### ${category[0].toUpperCase()+category.slice(1)}\n\n| Skill | Use it for |\n|---|---|\n`;
+ body += `### ${category === 'ui' ? 'UI' : category[0].toUpperCase()+category.slice(1)}\n\n| Skill | Use it for |\n|---|---|\n`;
  for (const s of catalog.filter(s=>s.category===category)) body += `| [${s.name}](${s.path}/SKILL.md) | ${s.description} |\n`;
  body+='\n';
 }
