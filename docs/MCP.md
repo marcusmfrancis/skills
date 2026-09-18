@@ -1,7 +1,5 @@
 # MCP setup
 
-This is the personal catalog for marcusmfrancis/skills. It is separate from the existing Octane website endpoint.
-
 Requires Node.js 20+ and an MCP client that supports local stdio servers. Add this entry using your client's MCP configuration interface:
 
 ```json
@@ -9,7 +7,7 @@ Requires Node.js 20+ and an MCP client that supports local stdio servers. Add th
   "mcpServers": {
     "mf-skills": {
       "command": "npx",
-      "args": ["--yes", "github:marcusmfrancis/skills#v0.1.1", "mcp"]
+      "args": ["--yes", "github:marcusmfrancis/skills#v0.2.0", "mcp"]
     }
   }
 }

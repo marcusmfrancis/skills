@@ -1,0 +1,5 @@
+- Seijaku compressed rock geometry
+- Seijaku adaptive swept tree geometry
+- [Three.js LOD](https://threejs.org/docs/pages/LOD.html)
+- [Three.js GLTFLoader](https://threejs.org/docs/pages/GLTFLoader.html)
+- [Three.js InstancedMesh](https://threejs.org/docs/pages/InstancedMesh.html)

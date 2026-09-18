@@ -1,0 +1,3 @@
+- Seijaku ray shader and post-processing
+- [Three.js ShaderPass](https://threejs.org/docs/pages/ShaderPass.html)
+- [Three.js EffectComposer](https://threejs.org/docs/pages/EffectComposer.html)

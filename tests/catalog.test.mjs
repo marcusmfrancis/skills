@@ -6,7 +6,7 @@ import { join } from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { Client } from '@modelcontextprotocol/sdk/client/index.js';
 import { StdioClientTransport } from '@modelcontextprotocol/sdk/client/stdio.js';
-import { catalog, root, read, install } from '../src/catalog.mjs';
+import { catalog, root, read, install, globalDestination } from '../src/catalog.mjs';
 
 test('every registered skill is portable and frontmatter matches its folder', async () => {
  assert.equal(new Set(catalog.map(s=>s.name)).size,catalog.length);
@@ -15,7 +15,7 @@ test('every registered skill is portable and frontmatter matches its folder', as
   assert.ok(skill.path.endsWith('/'+skill.name));
   const text=await read(skill.name);
   assert.ok(text.startsWith(`---\nname: ${skill.name}\ndescription: `));
-  assert.doesNotMatch(text,/\/Users\/|<YOUR_|TODO|FIXME/);
+  assert.doesNotMatch(text,/\/Users\/|github\.com\/MengTo\/Skills/i);
   assert.ok(skill.sources.length>0);
  }
 });
@@ -26,7 +26,12 @@ test('CLI installs every complete skill, refuses overwrites and invalid names',a
   for(const skill of catalog) {
    const result=spawnSync(process.execPath,[join(root,'bin/mf-skills.mjs'),'install',skill.name,'--dest',tmp],{encoding:'utf8'});
    assert.equal(result.status,0,result.stderr);
-   assert.equal(await readFile(join(tmp,skill.name,'SKILL.md'),'utf8'),await read(skill.name));
+   const files = await readdir(join(root,skill.path), { recursive: true, withFileTypes: true });
+   for (const file of files.filter(f=>f.isFile())) {
+    const {relative}=await import('node:path');
+    const rel=relative(join(root,skill.path),join(file.parentPath,file.name));
+    assert.deepEqual(await readFile(join(tmp,skill.name,rel)),await readFile(join(root,skill.path,rel)));
+   }
    await writeFile(join(tmp,skill.name,'keep.txt'),'user changes');
    await assert.rejects(install(skill.name,tmp),{code:'EEXIST'});
    assert.equal(await readFile(join(tmp,skill.name,'keep.txt'),'utf8'),'user changes');
@@ -64,4 +69,10 @@ test('real MCP client lists, searches and reads all skills and resources',async(
   const bad=await client.callTool({name:'mf_skills_read',arguments:{name:'../../etc/passwd'}});
   assert.equal(bad.isError,true);
  } finally {await client.close();}
+});
+
+test('global destinations are explicit and agent-specific', () => {
+ assert.equal(globalDestination('codex', '/tmp/isolated-user'), '/tmp/isolated-user/.codex/skills');
+ assert.equal(globalDestination('claude', '/tmp/isolated-user'), '/tmp/isolated-user/.claude/skills');
+ assert.throws(()=>globalDestination('../../escape','/tmp/isolated-user'), /Choose/);
 });

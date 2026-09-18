@@ -1,0 +1,4 @@
+- Seijaku settled-snow material
+- Seijaku seasonal foliage
+- Seijaku shared season state
+- [Three.js material shader hooks](https://threejs.org/docs/pages/Material.html)

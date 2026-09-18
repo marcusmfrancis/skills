@@ -33,3 +33,9 @@ export async function install(name, destination) {
   }
   return target;
 }
+
+export function globalDestination(agent, home) {
+  const folders = { codex: '.codex', claude: '.claude' };
+  if (!Object.hasOwn(folders, agent)) throw new Error('Choose --agent codex or --agent claude.');
+  return join(home, folders[agent], 'skills');
+}

@@ -2,53 +2,1588 @@
   "version": 1,
   "skills": [
     {
-      "name": "mf-brand-svg-logos",
-      "title": "SVG brand marks",
-      "description": "Find and use SVG brand marks.",
-      "category": "design",
+      "name": "mf-3d-falling-leaves",
+      "title": "3D Falling Leaves",
+      "description": "Build recognizable falling leaves in world space using instanced geometry, independent tumble, coupled sideways drift, shared wind, scene occlusion, and camera-aware recycling. Use for 3D autumn leaves or drifting foliage in Three.js and similar scenes; use falling-leaves for a 2D canvas overlay.",
+      "category": "3d",
       "tags": [
-        "SVG",
-        "logos",
-        "brand"
+        "3d",
+        "falling",
+        "leaves"
       ],
-      "path": "agent-skills/design/mf-brand-svg-logos",
-      "reviewedAt": "2026-09-18",
+      "path": "agent-skills/3d/mf-3d-falling-leaves",
       "sources": [
-        "https://github.com/simple-icons/simple-icons"
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
       ],
-      "preview": "assets/svg-logo-library.png",
-      "validation": "Editorially reviewed; installer and MCP delivery tested. Downstream implementation outcomes depend on the consuming project."
+      "validation": "Packaging and delivery checked; individual workflows not executed."
     },
     {
-      "name": "mf-ui-reference-catalog",
-      "title": "UI recording to evidence catalog",
-      "description": "Turn UI recordings into timestamped references and interaction notes.",
-      "category": "design",
+      "name": "mf-3d-four-seasons",
+      "title": "3D Four Seasons",
+      "description": "Add coordinated spring, summer, fall, and winter states to a 3D scene, blending foliage, sunlight, sky, ground materials, snow, and particles without rebuilding the world. Use for seasonal controls, architectural walkthroughs, and outdoor scenes with four-season transitions.",
+      "category": "3d",
       "tags": [
-        "video",
-        "UI",
-        "reference",
-        "motion"
+        "3d",
+        "four",
+        "seasons"
       ],
-      "path": "agent-skills/design/mf-ui-reference-catalog",
+      "path": "agent-skills/3d/mf-3d-four-seasons",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-3d-high-poly-models",
+      "title": "3D High-Poly Models",
+      "description": "Create or integrate highly detailed 3D models with smooth silhouettes, shaped surfaces, believable bevels, and close-up geometry, then prepare suitable runtime LODs and loading. Use when a user requests high polygon counts, ultra-realistic models, detailed architectural assets, or removal of visibly faceted geometry.",
+      "category": "3d",
+      "tags": [
+        "3d",
+        "high",
+        "poly",
+        "models"
+      ],
+      "path": "agent-skills/3d/mf-3d-high-poly-models",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-3d-high-resolution-textures",
+      "title": "3D High-Resolution Textures",
+      "description": "Build sharp, physically coherent high-resolution materials for 3D rendering with appropriate PBR maps, texel density, UV direction, mipmaps, anisotropic filtering, and progressive asset delivery. Use for detailed wood, stone, fabric, foliage, and architectural close-ups without excessive download or GPU memory costs.",
+      "category": "3d",
+      "tags": [
+        "3d",
+        "high",
+        "resolution",
+        "textures"
+      ],
+      "path": "agent-skills/3d/mf-3d-high-resolution-textures",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-3d-retina-resolution",
+      "title": "3D Retina Resolution",
+      "description": "Render a 3D canvas sharply on Retina and HiDPI displays, including explicit 200 percent resolution, synchronized renderer and post-processing sizes, correct pointer coordinates, and measured quality fallbacks. Use for blurry WebGL output, 2x rendering, high-resolution previews, and display-density changes.",
+      "category": "3d",
+      "tags": [
+        "3d",
+        "retina",
+        "resolution"
+      ],
+      "path": "agent-skills/3d/mf-3d-retina-resolution",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-3d-sky-background",
+      "title": "3D Sky Background",
+      "description": "Create a camera-correct sky background for a 3D scene with a procedural atmosphere or panorama, horizon haze, aligned sunlight, and coherent environment lighting. Use for architectural skies, outdoor 3D backgrounds, golden hour, and day-to-night sky transitions.",
+      "category": "3d",
+      "tags": [
+        "3d",
+        "sky",
+        "background"
+      ],
+      "path": "agent-skills/3d/mf-3d-sky-background",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-3d-sky-rays",
+      "title": "3D Sky Rays",
+      "description": "Add sun shafts and crepuscular rays to a Three.js or equivalent 3D scene, using scene occlusion, a projected sun position, controlled foreground spill, and scalable post-processing. Use for rays of light from the sky, sunlight through trees or roofs, and golden-hour architectural scenes.",
+      "category": "3d",
+      "tags": [
+        "3d",
+        "sky",
+        "rays"
+      ],
+      "path": "agent-skills/3d/mf-3d-sky-rays",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-3d-virtual-tour",
+      "title": "3D Virtual Tour",
+      "description": "Build guided and interactive virtual tours through a 3D environment with authored camera paths, room and floor-plan navigation, orbit inspection, smooth mode handoffs, and progressive loading. Use for architectural walkthroughs, real-estate tours, museums, showrooms, and explorable spaces built with Three.js or a similar renderer.",
+      "category": "3d",
+      "tags": [
+        "3d",
+        "virtual",
+        "tour"
+      ],
+      "path": "agent-skills/3d/mf-3d-virtual-tour",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-add-mouse-driven-orbit",
+      "title": "Add Mouse-Driven Orbit",
+      "description": "Add restrained mouse-driven orbit and parallax depth to a Three.js hero by damping one pointer target and splitting it across camera translation, look-at, and small object rotations. Use for passive cinematic 3D heroes, pointer-responsive scenes, organic model parallax, and interactive depth where OrbitControls would feel like a product viewer.",
+      "category": "web-design",
+      "tags": [
+        "add",
+        "mouse",
+        "driven",
+        "orbit"
+      ],
+      "path": "agent-skills/web-design/mf-web-add-mouse-driven-orbit",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-add-shader-cursor-trail",
+      "title": "Add Shader Cursor Trail",
+      "description": "Add the Shaders WebGPU mouse effect used for the Tidal Commons hero: a white twinkling halftone cursor trail driven by ChromaFlow, masked through a DotGrid, finished with chromatic ripples and film grain, and protected by static, touch, accessibility, SSR, and performance fallbacks. Use when a user asks for this shader mouse effect, a halftone cursor trail, an interactive WebGPU hero/contact background, or a reusable cursor-following shader layer in React, Next.js, Vue, Svelte, Solid, or plain web projects.",
+      "category": "web-design",
+      "tags": [
+        "add",
+        "shader",
+        "cursor",
+        "trail"
+      ],
+      "path": "agent-skills/web-design/mf-web-add-shader-cursor-trail",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-agency-grid-layout-minimal",
+      "title": "Agency Grid Layout Minimal",
+      "description": "Create a minimal agency design system with a disciplined editorial grid, oversized typography, quiet uppercase utility labels, restrained image blocks, and subtle structural detail.",
+      "category": "web-design",
+      "tags": [
+        "agency",
+        "grid",
+        "layout",
+        "minimal"
+      ],
+      "path": "agent-skills/web-design/mf-web-agency-grid-layout-minimal",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-ambient-section-particles",
+      "title": "Ambient Section Particles",
+      "description": "Add a restrained particle atmosphere inside one section with configurable shapes, density, gravity, wind, sway, rotation, recycling or settling, pointer disturbance, visibility pausing, responsive limits, and reduced-motion fallbacks. Use for petals, leaves, snow, sparks, confetti, dots, paper, icons, or brand fragments that support a section's mood without obscuring content.",
+      "category": "web-design",
+      "tags": [
+        "ambient",
+        "section",
+        "particles"
+      ],
+      "path": "agent-skills/web-design/mf-web-ambient-section-particles",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-animation-on-scroll",
+      "title": "Animation On Scroll",
+      "description": "Create an on-scroll animation trigger using IntersectionObserver with Tailwind-friendly animation classes and keyframes. Use when asked for scroll-reveal, animate-on-scroll, or sequencing element animations when they enter the viewport.",
+      "category": "web-design",
+      "tags": [
+        "animation",
+        "on",
+        "scroll"
+      ],
+      "path": "agent-skills/web-design/mf-web-animation-on-scroll",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-animation-systems",
+      "title": "Animation Systems (Stripe × Linear × Apple × Vercel)",
+      "description": "Use when designing or implementing product-grade web motion like Stripe, Linear, Apple, and Vercel. Covers motion principles, easing/duration defaults, choreography patterns, scroll/hover interactions, performance, accessibility (reduced motion), and implementation guidance.",
+      "category": "web-design",
+      "tags": [
+        "animation",
+        "systems"
+      ],
+      "path": "agent-skills/web-design/mf-web-animation-systems",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-atmosphere-background",
+      "title": "Atmosphere Background",
+      "description": "Create a dark atmospheric background with drifting vertical light folds, screen-blended glow, and a concentrated luminous corner or lower-edge bloom.",
+      "category": "web-design",
+      "tags": [
+        "atmosphere",
+        "background"
+      ],
+      "path": "agent-skills/web-design/mf-web-atmosphere-background",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-background-grid-webgl",
+      "title": "Background Grid WebGL",
+      "description": "Create a perspective WebGL background grid with fading lines, subtle particle haze, slow forward drift, and gentle camera parallax.",
+      "category": "web-design",
+      "tags": [
+        "background",
+        "grid",
+        "webgl"
+      ],
+      "path": "agent-skills/web-design/mf-web-background-grid-webgl",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-beam-glow-states",
+      "title": "Beam Glow States",
+      "description": "Create React loading, processing, selected, current, focus, and pressed states with the border-beam package's animated edge glow. Use when a card, button, input, tab, option, task panel, or agent surface needs a restrained traveling or breathing beam; includes installation, imports, prop selection, state wiring, reduced motion, accessibility, and performance and layout guardrails.",
+      "category": "web-design",
+      "tags": [
+        "beam",
+        "glow",
+        "states"
+      ],
+      "path": "agent-skills/web-design/mf-web-beam-glow-states",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-beautiful-shadows",
+      "title": "Beautiful Shadows",
+      "description": "Apply exact Tailwind arbitrary shadow utilities for polished, layered neutral elevation. Use when compact cards, controls, panels, popovers, hero media, feature callouts, or modal-like containers need refined shadows without default Tailwind shadow scales or colored tinting.",
+      "category": "web-design",
+      "tags": [
+        "beautiful",
+        "shadows"
+      ],
+      "path": "agent-skills/web-design/mf-web-beautiful-shadows",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-blue-cloudy-clean-modern",
+      "title": "Blue Cloudy Clean Modern",
+      "description": "Create a clean modern design system with a luminous blue sky atmosphere, soft drifting cloud light, minimal white framing, and serene premium typography.",
+      "category": "web-design",
+      "tags": [
+        "blue",
+        "cloudy",
+        "clean",
+        "modern"
+      ],
+      "path": "agent-skills/web-design/mf-web-blue-cloudy-clean-modern",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-blue-laser-clean-glass-layout",
+      "title": "Blue Laser Clean Glass Layout",
+      "description": "Create a clean dark glass layout system with a thin blue laser atmosphere, frosted premium shells, and polished dashboard structure.",
+      "category": "web-design",
+      "tags": [
+        "blue",
+        "laser",
+        "clean",
+        "glass",
+        "layout"
+      ],
+      "path": "agent-skills/web-design/mf-web-blue-laser-clean-glass-layout",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-book-serif-index",
+      "title": "Book Serif Index",
+      "description": "Create an archival book-reader design system with serif-led pages, mono index navigation, aged paper surfaces, margin notes, and a premium catalog frame.",
+      "category": "web-design",
+      "tags": [
+        "book",
+        "serif",
+        "index"
+      ],
+      "path": "agent-skills/web-design/mf-web-book-serif-index",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-css-border-gradient",
+      "title": "Border Gradients",
+      "description": "Apply subtle gradient-border treatments for premium web surfaces. Use when cards, pricing panels, nav bars, modals, buttons, or hero surfaces need a refined edge highlight without a loud glow.",
+      "category": "web-design",
+      "tags": [
+        "css",
+        "border",
+        "gradient"
+      ],
+      "path": "agent-skills/web-design/mf-web-css-border-gradient",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-bright-green-tech-system-webgl",
+      "title": "Bright Green Tech System WebGL",
+      "description": "Create a bright-green technical design system with structured split layouts, hard-framed dark surfaces, mono utility labels, and a prominent WebGL visualization zone.",
+      "category": "web-design",
+      "tags": [
+        "bright",
+        "green",
+        "tech",
+        "system",
+        "webgl"
+      ],
+      "path": "agent-skills/web-design/mf-web-bright-green-tech-system-webgl",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-build-wireframe-scan-reveal",
+      "title": "Build a Wireframe Scan Reveal",
+      "description": "Reveal Three.js geometry with an expanding world-space scan whose wire cage leads the solid surface, then burns away. Use for wireframe scanning, radial mesh reveals, survey pulses, holographic assembly, topology intros, and 3D model entrances where a plain opacity wipe does not explain the form.",
+      "category": "web-design",
+      "tags": [
+        "build",
+        "wireframe",
+        "scan",
+        "reveal"
+      ],
+      "path": "agent-skills/web-design/mf-web-build-wireframe-scan-reveal",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-build-interactive-particle-trail",
+      "title": "Build an Interactive Particle Trail",
+      "description": "Build a cursor or touch particle interaction that emits by distance along the traveled segment into a recycled GPU point pool, with optional keyboard-triggered bursts. Use for interactive particle trails, pollen lifted from a surface, dust disturbed by a pointer, hover particle bursts, and discrete motes whose spacing must stay consistent at different gesture speeds.",
+      "category": "web-design",
+      "tags": [
+        "build",
+        "interactive",
+        "particle",
+        "trail"
+      ],
+      "path": "agent-skills/web-design/mf-web-build-interactive-particle-trail",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-build-awwwards-quality-sites",
+      "title": "Build Awwwards-Quality Sites",
+      "description": "Art-direct and implement distinctive, motion-rich marketing, editorial, portfolio, and landing websites with original reference-inspired imagery, standout heroes, GSAP choreography, one smooth-scroll engine, optional Three.js shaders, honest icon and logo sourcing, photo avatars, accessibility, and performance safeguards. Use when a user asks for an Awwwards-quality, premium, cinematic, interactive, high-concept, or motion-led website, or explicitly requests this visual and motion system.",
+      "category": "web-design",
+      "tags": [
+        "build",
+        "awwwards",
+        "quality",
+        "sites"
+      ],
+      "path": "agent-skills/web-design/mf-web-build-awwwards-quality-sites",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-build-threejs-scroll-worlds",
+      "title": "Build Three.js Scroll Worlds",
+      "description": "Build rich, scroll-controlled real-time Three.js experiences as one persistent 3D world whose camera, lighting, atmosphere, materials, objects, DOM story, and interactions evolve across authored chapters. Use for 3D scrollytelling, scroll-driven WebGL worlds, camera journeys, interactive portfolios, product stories, exhibitions, explainers, game or film microsites, spatial narratives, and multi-scene websites where native scroll should travel through one continuous place. Not limited to landing pages.",
+      "category": "web-design",
+      "tags": [
+        "build",
+        "threejs",
+        "scroll",
+        "worlds"
+      ],
+      "path": "agent-skills/web-design/mf-web-build-threejs-scroll-worlds",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-cinematic-gsap-lenis-motion-system",
+      "title": "Cinematic GSAP Lenis Motion System",
+      "description": "Create premium cinematic web motion systems with GSAP, ScrollTrigger, and Lenis. Use for luxury editorial websites, creative studio portfolios, Awwwards-style interactions, smooth scroll reveals, staggered text, parallax, pinned sections, magnetic hover states, custom cursors, and mouse-reactive layered movement.",
+      "category": "web-design",
+      "tags": [
+        "cinematic",
+        "gsap",
+        "lenis",
+        "motion",
+        "system"
+      ],
+      "path": "agent-skills/web-design/mf-web-cinematic-gsap-lenis-motion-system",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-cinematic-scroll-storytelling",
+      "title": "Cinematic Scroll Storytelling",
+      "description": "Create cinematic scroll-driven landing pages with Lenis smooth scrolling, GSAP ScrollTrigger, scroll-linked progression, staggered text reveals, sticky card stacks, parallax backgrounds, scroll-scrubbed transitions, footer reveals, and immersive preloaders. Use when analyzing or building premium editorial scroll experiences, sticky project stacks, kinetic typography, or section-by-section storytelling.",
+      "category": "web-design",
+      "tags": [
+        "cinematic",
+        "scroll",
+        "storytelling"
+      ],
+      "path": "agent-skills/web-design/mf-web-cinematic-scroll-storytelling",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-clean-minimal-beige-light-mode",
+      "title": "Clean Minimal Beige Light Mode",
+      "description": "Create a clean minimal beige light-mode design system with warm neutral shells, quiet process grids, restrained accent color, and elegant low-contrast structure.",
+      "category": "web-design",
+      "tags": [
+        "clean",
+        "minimal",
+        "beige",
+        "light",
+        "mode"
+      ],
+      "path": "agent-skills/web-design/mf-web-clean-minimal-beige-light-mode",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-cobejs",
+      "title": "cobe.js — Lightweight WebGL Globe",
+      "description": "Use when adding a lightweight interactive globe with cobe (canvas setup, markers, interaction, performance, integration with React/Next.js).",
+      "category": "web-design",
+      "tags": [
+        "cobejs"
+      ],
+      "path": "agent-skills/web-design/mf-web-cobejs",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-company-logos",
+      "title": "Company Logos",
+      "description": "Use Iconify Simple Icons logos (64x64) instead of text logos.",
+      "category": "web-design",
+      "tags": [
+        "company",
+        "logos"
+      ],
+      "path": "agent-skills/web-design/mf-web-company-logos",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-container-lines",
+      "title": "Container Lines",
+      "description": "Add vertical container-size guide lines with mini corner squares for precise, structured web layouts. Use when asked for container lines, measured layout guides, vertical boundary lines, editorial grid markers, or small corner-square frame details.",
+      "category": "web-design",
+      "tags": [
+        "container",
+        "lines"
+      ],
+      "path": "agent-skills/web-design/mf-web-container-lines",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-corner-diagonals",
+      "title": "Corner Diagonals",
+      "description": "Apply diagonal-cut corners and chamfered edges to buttons, cards, panels, and container shells. Use when a design needs precise geometric framing, sci-fi UI surfaces, clipped-corner controls, or engineered sharp containers instead of rounded pills or plain rectangles.",
+      "category": "web-design",
+      "tags": [
+        "corner",
+        "diagonals"
+      ],
+      "path": "agent-skills/web-design/mf-web-corner-diagonals",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-corner-lasers",
+      "title": "Corner Lasers",
+      "description": "Create a corner-anchored laser composition with thin beams, a bright emitter node, bloom, and atmospheric glow or fog.",
+      "category": "web-design",
+      "tags": [
+        "corner",
+        "lasers"
+      ],
+      "path": "agent-skills/web-design/mf-web-corner-lasers",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-css-alpha-masking",
+      "title": "CSS Alpha Masking",
+      "description": "Apply CSS alpha masking with linear-gradient for horizontal or vertical edge fades (mask-image and -webkit-mask-image). Use when asked for alpha masks, fade edges, or CSS mask gradients.",
+      "category": "web-design",
+      "tags": [
+        "css",
+        "alpha",
+        "masking"
+      ],
+      "path": "agent-skills/web-design/mf-web-css-alpha-masking",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-dark-blue-contrasting-clean",
+      "title": "Dark Blue Contrasting Clean",
+      "description": "Create a dark-blue clean design system with strong contrast, cobalt gradient feature blocks, crisp framed structure, and restrained premium glow.",
+      "category": "web-design",
+      "tags": [
+        "dark",
+        "blue",
+        "contrasting",
+        "clean"
+      ],
+      "path": "agent-skills/web-design/mf-web-dark-blue-contrasting-clean",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-dark-glass-clean-layout",
+      "title": "Dark Glass Clean Layout",
+      "description": "Create a dark glass layout system with frosted premium shells, clean multi-column workspace structure, floating data cards, and restrained atmospheric depth.",
+      "category": "web-design",
+      "tags": [
+        "dark",
+        "glass",
+        "clean",
+        "layout"
+      ],
+      "path": "agent-skills/web-design/mf-web-dark-glass-clean-layout",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-dither-background",
+      "title": "Dither Background",
+      "description": "Create a dark monochrome procedural background with enlarged square pixels and visible Bayer-style ordered dithering. Use when a page needs an atmospheric near-black dither field, broad organic waves or cloud masses, and restrained gray-white highlights behind framed UI, hero content, or data overlays.",
+      "category": "web-design",
+      "tags": [
+        "dither",
+        "background"
+      ],
+      "path": "agent-skills/web-design/mf-web-dither-background",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-dither-laser-dark-mode",
+      "title": "Dither Laser Dark Mode",
+      "description": "Create a dark premium design system that combines near-black surfaces, subtle ordered-dither texture, and a thin accent-colored laser atmosphere.",
+      "category": "web-design",
+      "tags": [
+        "dither",
+        "laser",
+        "dark",
+        "mode"
+      ],
+      "path": "agent-skills/web-design/mf-web-dither-laser-dark-mode",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-documentary-brutalist-agency",
+      "title": "Documentary Brutalist Agency",
+      "description": "Create or redesign creative agency, production studio, architecture, culture, and portfolio websites with billboard typography, hard black-and-white chapters, exposed grids, documentary imagery, irregular collages, restrained parallax, brutalist navigation, and accessible FAQ controls.",
+      "category": "web-design",
+      "tags": [
+        "documentary",
+        "brutalist",
+        "agency"
+      ],
+      "path": "agent-skills/web-design/mf-web-documentary-brutalist-agency",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-editorial-portfolio-chapters",
+      "title": "Editorial Portfolio Chapters",
+      "description": "Create or redesign creative-studio, agency, photographer, artist, and portfolio websites where project work leads the story. Use for dark editorial shells, full-bleed campaign media, color-coded case-study chapters, oversized service typography, restrained project reveals, and a decisive contact finale.",
+      "category": "web-design",
+      "tags": [
+        "editorial",
+        "portfolio",
+        "chapters"
+      ],
+      "path": "agent-skills/web-design/mf-web-editorial-portfolio-chapters",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-editorial-service-booking",
+      "title": "Editorial Service Booking",
+      "description": "Create or redesign appointment-based service websites for salons, barbers, spas, wellness studios, clinics, and hospitality brands. Use for warm editorial layouts, serif-led identity, documentary portrait crops, calm treatment selectors, location-aware booking, and operational states that remain elegant and trustworthy.",
+      "category": "web-design",
+      "tags": [
+        "editorial",
+        "service",
+        "booking"
+      ],
+      "path": "agent-skills/web-design/mf-web-editorial-service-booking",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-editorial-tech",
+      "title": "Editorial Tech",
+      "description": "Blend editorial magazine composition with precision product-tech detailing using asymmetrical grids, cinematic media bands, mono utility labels, and restrained accent color.",
+      "category": "web-design",
+      "tags": [
+        "editorial",
+        "tech"
+      ],
+      "path": "agent-skills/web-design/mf-web-editorial-tech",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-falling-leaves",
+      "title": "Falling Leaves",
+      "description": "Build falling leaves that read as leaves, with each one tumbling on its own axis so it presents a face, thins to an edge, and opens out again, and with its sideways slip driven by that same tumble. Covers the 2-D canvas build and the instanced-3-D variant, where leaves are recycled from, density-versus-count maths, depth layering, colour under a tone-mapped composite, reduced motion, and visibility pausing. Use for autumn maple, sakura petals, blossom, ash, snowfall shapes, or any drifting foliage where a generic particle field reads as confetti.",
+      "category": "web-design",
+      "tags": [
+        "falling",
+        "leaves"
+      ],
+      "path": "agent-skills/web-design/mf-web-falling-leaves",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-framed-grid-layout",
+      "title": "Framed Grid Layout",
+      "description": "Create minimal framed grid layouts with thin visible boundary lines, L-shaped corner brackets, subtle diagonal line texture, and strict section alignment. Use when asked for clean, neutral, precise, structured, editorial, technical, or guide-border web layouts.",
+      "category": "web-design",
+      "tags": [
+        "framed",
+        "grid",
+        "layout"
+      ],
+      "path": "agent-skills/web-design/mf-web-framed-grid-layout",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-framed-tech-dark-border-gradient",
+      "title": "Framed Tech Dark Border Gradient",
+      "description": "Create a framed dark technical design system with border-gradient shells, asymmetrical grid panels, mono utility labeling, and restrained monochrome atmosphere.",
+      "category": "web-design",
+      "tags": [
+        "framed",
+        "tech",
+        "dark",
+        "border",
+        "gradient"
+      ],
+      "path": "agent-skills/web-design/mf-web-framed-tech-dark-border-gradient",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-funky-purple-container-tech",
+      "title": "Funky Purple Container Tech",
+      "description": "Create a dark container-led technical design system with fuchsia-purple accents, layered rounded shells, crisp frame lines, and playful futuristic focal objects.",
+      "category": "web-design",
+      "tags": [
+        "funky",
+        "purple",
+        "container",
+        "tech"
+      ],
+      "path": "agent-skills/web-design/mf-web-funky-purple-container-tech",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-glass-dark-mode-clock",
+      "title": "Glass Dark Mode Clock",
+      "description": "Create a dark glass design system with frosted shells, soft beam grids, circular clock-like calibration dials, and precise sci-fi instrument framing.",
+      "category": "web-design",
+      "tags": [
+        "glass",
+        "dark",
+        "mode",
+        "clock"
+      ],
+      "path": "agent-skills/web-design/mf-web-glass-dark-mode-clock",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-glass-dark-ui",
+      "title": "Glass Dark UI",
+      "description": "Build dark-mode glassmorphism interfaces with readable contrast, frosted surfaces, and gradient borders using a pseudo-element mask. Use when asked for glass cards, frosted dark hero sections, blur panels, or dark UI systems with gradient/glow borders.",
+      "category": "web-design",
+      "tags": [
+        "glass",
+        "dark",
+        "ui"
+      ],
+      "path": "agent-skills/web-design/mf-web-glass-dark-ui",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-globe-particles",
+      "title": "Globe Particles",
+      "description": "Create a globe-like 3D particle visualization with a dense luminous spherical core and thinner orbital ring or flattened disc. Use when a design needs a premium planetary, orbital, synthesized data-globe effect rendered with real WebGL/Three.js particles, not generic starfields or full page layout changes.",
+      "category": "web-design",
+      "tags": [
+        "globe",
+        "particles"
+      ],
+      "path": "agent-skills/web-design/mf-web-globe-particles",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-globe-gl",
+      "title": "Globe.GL",
+      "description": "Use when implementing globe.gl (Globe.GL) for 3D globe data visualization with WebGL/ThreeJS, including setup, data layers (points, arcs, polygons, labels), and integration patterns in plain HTML or React.",
+      "category": "web-design",
+      "tags": [
+        "globe",
+        "gl"
+      ],
+      "path": "agent-skills/web-design/mf-web-globe-gl",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-gooey-blob-system",
+      "title": "Gooey Blob System",
+      "description": "Create a gooey blob system using SVG filters where multiple shapes merge into a single fluid form. Use overlapping circles combined with a Gaussian blur and color matrix filter to produce a continuous, organic mass. The forms should visually fuse and separate based on proximity. Focus on filter-driven merging (blur + threshold effect), soft organic boundaries with no hard edges, multiple independent shapes behaving as one system, and smooth continuous motion that feels fluid and cohesive.",
+      "category": "web-design",
+      "tags": [
+        "gooey",
+        "blob",
+        "system"
+      ],
+      "path": "agent-skills/web-design/mf-web-gooey-blob-system",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-gsap",
+      "title": "GSAP (GreenSock) — Web Animation",
+      "description": "Use when you need to add or debug professional web animations with GSAP (timelines, ScrollTrigger, stagger, transforms) in HTML/CSS/JS/React. Includes patterns for smooth motion, performance, and common pitfalls.",
+      "category": "web-design",
+      "tags": [
+        "gsap"
+      ],
+      "path": "agent-skills/web-design/mf-web-gsap",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-gsap-scrolltrigger-storytelling",
+      "title": "GSAP ScrollTrigger Storytelling",
+      "description": "Build cinematic sticky product storytelling with GSAP ScrollTrigger, progressive UI reveals, scroll-synced animation, smooth interpolation, and immersive section transitions.",
+      "category": "web-design",
+      "tags": [
+        "gsap",
+        "scrolltrigger",
+        "storytelling"
+      ],
+      "path": "agent-skills/web-design/mf-web-gsap-scrolltrigger-storytelling",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-high-contrast-skeuomorphic-clean",
+      "title": "High Contrast Skeuomorphic Clean",
+      "description": "Create a high-contrast clean skeuomorphic design system with molded dark surfaces, crisp light separation, tactile inset depth, and restrained signal accents.",
+      "category": "web-design",
+      "tags": [
+        "high",
+        "contrast",
+        "skeuomorphic",
+        "clean"
+      ],
+      "path": "agent-skills/web-design/mf-web-high-contrast-skeuomorphic-clean",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-image-first-grid-layout",
+      "title": "Image First Grid Layout",
+      "description": "Create an image-led grid design system with full-bleed photography, structural guide lines, anchored content blocks, and restrained technical overlays.",
+      "category": "web-design",
+      "tags": [
+        "image",
+        "first",
+        "grid",
+        "layout"
+      ],
+      "path": "agent-skills/web-design/mf-web-image-first-grid-layout",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-landing-page",
+      "title": "Landing Page (High‑Conversion) — Web Design",
+      "description": "Use when designing or rewriting a high-converting landing page (single-offer page) for SaaS/apps/services. Covers structure, layout patterns, conversion strategies, copywriting, SEO/AEO, and common pitfalls.",
+      "category": "web-design",
+      "tags": [
+        "landing",
+        "page"
+      ],
+      "path": "agent-skills/web-design/mf-web-landing-page",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-light-mode-paper-technical",
+      "title": "Light Mode Paper Technical",
+      "description": "Create a light-mode technical design system with warm paper surfaces, dark outer framing, subtle diagonal texture, precise bracketed geometry, and restrained accent signals.",
+      "category": "web-design",
+      "tags": [
+        "light",
+        "mode",
+        "paper",
+        "technical"
+      ],
+      "path": "agent-skills/web-design/mf-web-light-mode-paper-technical",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-liquid-metal-border",
+      "title": "Liquid Metal Border",
+      "description": "Add and tune animated liquid-metal WebGL borders with the React `metal-fx` package. Use when buttons, icon controls, chips, tabs, cards, or selected surfaces need a metallic active, selected, hover, focus, or premium border; when implementing the MetalFx component from metal.jakubantalik.com; or when troubleshooting its presets, themes, strength, glow, reflections, sizing, radius, animation, accessibility, SSR, or performance.",
+      "category": "web-design",
+      "tags": [
+        "liquid",
+        "metal",
+        "border"
+      ],
+      "path": "agent-skills/web-design/mf-web-liquid-metal-border",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-marquee-loop",
+      "title": "Marquee",
+      "description": "Apply seamless infinite marquee loops using duplicated items.",
+      "category": "web-design",
+      "tags": [
+        "marquee",
+        "loop"
+      ],
+      "path": "agent-skills/web-design/mf-web-marquee-loop",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-masked-reveal",
+      "title": "Masked Reveal",
+      "description": "Create masked staggered word reveals on scroll with GSAP ScrollTrigger. Use when headings, hero copy, section titles, or editorial text should reveal word-by-word through an overflow mask as they enter the viewport.",
+      "category": "web-design",
+      "tags": [
+        "masked",
+        "reveal"
+      ],
+      "path": "agent-skills/web-design/mf-web-masked-reveal",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-matterjs",
+      "title": "Matter.js",
+      "description": "Use when implementing 2D physics interactions with Matter.js, including Engine/World setup, Render/Runner configuration, adding bodies and constraints, and scroll/interaction-friendly canvas scenes.",
+      "category": "web-design",
+      "tags": [
+        "matterjs"
+      ],
+      "path": "agent-skills/web-design/mf-web-matterjs",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-mesh-gradient-dark-blue-clean",
+      "title": "Mesh Gradient Dark Blue Clean",
+      "description": "Create a futuristic, premium, clean dark-blue mesh-gradient design system across background rendering, hero shell, navigation, floating nodes, framed sections, CTAs, and motion. Use when the interface needs a near-black navy foundation, procedural blue mesh atmosphere, disciplined minimal structure, and infrastructural or planetary depth.",
+      "category": "web-design",
+      "tags": [
+        "mesh",
+        "gradient",
+        "dark",
+        "blue",
+        "clean"
+      ],
+      "path": "agent-skills/web-design/mf-web-mesh-gradient-dark-blue-clean",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-nested-container-clean-agency",
+      "title": "Nested Container Clean Agency",
+      "description": "Create a clean agency design system built from nested containers, with an outer editorial shell, inset dark feature blocks, rounded premium cards, and restrained accent color.",
+      "category": "web-design",
+      "tags": [
+        "nested",
+        "container",
+        "clean",
+        "agency"
+      ],
+      "path": "agent-skills/web-design/mf-web-nested-container-clean-agency",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-nested-container-frames",
+      "title": "Nested Container Frames",
+      "description": "Create a container-in-container layout system using nested frames. Use an outer centered container with visible vertical boundary lines and corner markers. Inside, place inner containers inset from the edges, each with its own background and rounded frame. Technique: outer container defines global bounds, inner containers use padding to create inset spacing, layered frames (border + background) to separate levels, and consistent spacing between outer frame and inner blocks.",
+      "category": "web-design",
+      "tags": [
+        "nested",
+        "container",
+        "frames"
+      ],
+      "path": "agent-skills/web-design/mf-web-nested-container-frames",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-number-details",
+      "title": "Number Details",
+      "description": "Add decorative 01, 02, 03 numeric detail markers.",
+      "category": "web-design",
+      "tags": [
+        "number",
+        "details"
+      ],
+      "path": "agent-skills/web-design/mf-web-number-details",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-operational-enterprise-ai",
+      "title": "Operational Enterprise AI",
+      "description": "Create or redesign enterprise AI, automation, security, and operations product pages that explain system boundaries, approvals, auditability, exceptions, and rollback. Use for dark cinematic heroes, hairline grids, metric pauses, expandable solution rows, case-study evidence, security proof, and qualified demo or waitlist handoffs.",
+      "category": "web-design",
+      "tags": [
+        "operational",
+        "enterprise",
+        "ai"
+      ],
+      "path": "agent-skills/web-design/mf-web-operational-enterprise-ai",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-orange-clean-paper-saas",
+      "title": "Orange Clean Paper SaaS",
+      "description": "Create a clean paper-toned SaaS design system with warm neutrals, orange accent signals, rounded premium forms, and polished product illustration surfaces.",
+      "category": "web-design",
+      "tags": [
+        "orange",
+        "clean",
+        "paper",
+        "saas"
+      ],
+      "path": "agent-skills/web-design/mf-web-orange-clean-paper-saas",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-pointer-trail-emitter",
+      "title": "Pointer Trail Emitter",
+      "description": "Build a cursor trail whose spacing stays constant at any hand speed, by emitting motes per unit of distance travelled rather than on a timer, so a flick draws the same continuous ribbon as a crawl instead of breaking into scattered dots. Covers sub-segment placement, the ring-buffer ordering trap, the idle breath a distance emitter needs, anchoring the trail to the screen in a 3-D scene, scaling scatter against the plane it hangs on, coasting instead of stopping dead, touch and reduced-motion fallbacks, and why moving the emitter to a DOM overlay to raise its z-index costs more than it buys. Use for cursor wisps, pointer sparks, embers, magic trails, comet tails, plankton, dust, or any mote trail that must stay legible however fast the hand moves.",
+      "category": "web-design",
+      "tags": [
+        "pointer",
+        "trail",
+        "emitter"
+      ],
+      "path": "agent-skills/web-design/mf-web-pointer-trail-emitter",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-pricing-page",
+      "title": "Pricing Page (High‑Conversion) — Web Design",
+      "description": "Use when designing or rewriting a high-converting SaaS pricing page (structure, plan design, copywriting, SEO/AEO, FAQs, layout patterns, experiments). Includes checklists, templates, and common pitfalls.",
+      "category": "web-design",
+      "tags": [
+        "pricing",
+        "page"
+      ],
+      "path": "agent-skills/web-design/mf-web-pricing-page",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-product-proof-saas",
+      "title": "Product Proof SaaS",
+      "description": "Create or redesign SaaS and AI product landing pages where a real workflow, interface, or deterministic demo is the central proof. Use for pale atmospheric shells, product UI in the hero, prompt-to-output stories, audience tabs, compact feature modules, honest pricing comparisons, and FAQ handoffs.",
+      "category": "web-design",
+      "tags": [
+        "product",
+        "proof",
+        "saas"
+      ],
+      "path": "agent-skills/web-design/mf-web-product-proof-saas",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-progressive-blur",
+      "title": "Progressive Blur",
+      "description": "Create a layered CSS progressive blur (top or bottom) using multiple backdrop-filter masks for depth and softness. Use when asked for “progressive blur”, “gradient blur overlay”, or stepped blur masks that fade from an edge of the viewport.",
+      "category": "web-design",
+      "tags": [
+        "progressive",
+        "blur"
+      ],
+      "path": "agent-skills/web-design/mf-web-progressive-blur",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-reveal-hover-effect",
+      "title": "Reveal Hover Effect",
+      "description": "Build cursor-following spotlight reveals that expose a second aligned image through a soft radial mask. Use for hover-to-color, before-and-after, x-ray, material, texture, product-detail, and illustrated hero effects where a desaturated or embossed base image should remain visible while another treatment follows an eased pointer.",
+      "category": "web-design",
+      "tags": [
+        "reveal",
+        "hover",
+        "effect"
+      ],
+      "path": "agent-skills/web-design/mf-web-reveal-hover-effect",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-scroll-progress-timeline",
+      "title": "Scroll Progress Timeline",
+      "description": "Turn any ordered process into a data-driven vertical or horizontal scroll story with a base line, progress fill, active step states, responsive collapse, semantic fallback, and reduced-motion behavior. Use for onboarding, checkout, roadmaps, recipes, case studies, service processes, histories, or narratives where progress through the sequence should become visible while scrolling.",
+      "category": "web-design",
+      "tags": [
+        "scroll",
+        "progress",
+        "timeline"
+      ],
+      "path": "agent-skills/web-design/mf-web-scroll-progress-timeline",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-scroll-world-storytelling",
+      "title": "Scroll World Storytelling",
+      "description": "Turn an article, case study, brand narrative, product journey, or long-form story into a cinematic scroll-driven landing page using one of three renderers: scrubbed video, a real-time Three.js world, or semantic HTML/SVG data and typography. Use when the user asks for a scroll world, fly-through landing page, article-to-website transformation, animated planet, data scrollytelling, video-scrubbed page, connected visual journey, or story-led alternative to ordinary stacked sections.",
+      "category": "web-design",
+      "tags": [
+        "scroll",
+        "world",
+        "storytelling"
+      ],
+      "path": "agent-skills/web-design/mf-web-scroll-world-storytelling",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-scroll-scrubbed-visual-sequence",
+      "title": "Scroll-Scrubbed Visual Sequence",
+      "description": "Build reversible scroll-controlled visual transformations with a pinned or sticky stage, normalized progress, and video, image-sequence, canvas, SVG, or DOM renderers. Use for hero transformations, product assembly, interface state walkthroughs, object rotation, diagrams, or photo sequences that must move forward and backward with native scrolling.",
+      "category": "web-design",
+      "tags": [
+        "scroll",
+        "scrubbed",
+        "visual",
+        "sequence"
+      ],
+      "path": "agent-skills/web-design/mf-web-scroll-scrubbed-visual-sequence",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-scroll-scrubbed-word-reveal",
+      "title": "Scroll-Scrubbed Word Reveal",
+      "description": "Reveal marked-up text word by word as scroll progress advances, while preserving semantic inline links, emphasis, responsive line wrapping, and reduced-motion readability. Use for headlines, quotes, manifestos, product statements, onboarding messages, or editorial passages where scrolling should pace comprehension rather than simulate typing.",
+      "category": "web-design",
+      "tags": [
+        "scroll",
+        "scrubbed",
+        "word",
+        "reveal"
+      ],
+      "path": "agent-skills/web-design/mf-web-scroll-scrubbed-word-reveal",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-visual-shader-gradient",
+      "title": "Shader gradients",
+      "description": "Add shader gradients to React projects.",
+      "category": "web-design",
+      "tags": [
+        "React",
+        "WebGL",
+        "gradients"
+      ],
+      "path": "agent-skills/web-design/mf-visual-shader-gradient",
       "reviewedAt": "2026-09-18",
       "sources": [
-        "https://github.com/MengTo/Skills"
+        "https://github.com/ruucm/shadergradient",
+        "https://www.shadergradient.co/"
       ],
       "preview": null,
       "validation": "Editorially reviewed; installer and MCP delivery tested. Downstream implementation outcomes depend on the consuming project."
     },
     {
+      "name": "mf-web-shaders-cursor-ripples",
+      "title": "Shaders Cursor Ripples",
+      "description": "Add cursor-following fluid WebGPU distortion over an existing image with the Shaders library's ImageTexture and CursorRipples components. Use when a hero, gallery, or media panel needs a water-ripple mouse effect; when replacing a drifting CSS spotlight or flashlight reveal; or when a prompt says to borrow only the shader interaction from a Shaders.com reference while preserving the current brand, image, copy, and layout.",
+      "category": "web-design",
+      "tags": [
+        "shaders",
+        "cursor",
+        "ripples"
+      ],
+      "path": "agent-skills/web-design/mf-web-shaders-cursor-ripples",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-skeuomorphic-ui",
+      "title": "Skeuomorphic UI",
+      "description": "Create skeuomorphic web UI surfaces with layered gradients, stacked inner and outer shadows, reflective gradient borders, micro texture, and embossed text or icon details. Use when asked for pressed, carved, tactile, realistic, soft-plastic, soft-metal, or premium physical interface styling.",
+      "category": "web-design",
+      "tags": [
+        "skeuomorphic",
+        "ui"
+      ],
+      "path": "agent-skills/web-design/mf-web-skeuomorphic-ui",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-solar-duotone-bold",
+      "title": "Solar Duotone Bold",
+      "description": "Use Iconify Solar Duotone Bold icon style.",
+      "category": "web-design",
+      "tags": [
+        "solar",
+        "duotone",
+        "bold"
+      ],
+      "path": "agent-skills/web-design/mf-web-solar-duotone-bold",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-split-layout-technical",
+      "title": "Split Layout Technical",
+      "description": "Create a technical split-screen design system with dual panels, fine frame lines, mono metadata, quiet editorial typography, and premium inset surfaces.",
+      "category": "web-design",
+      "tags": [
+        "split",
+        "layout",
+        "technical"
+      ],
+      "path": "agent-skills/web-design/mf-web-split-layout-technical",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-staggered-word-reveal",
+      "title": "Staggered Word Reveal",
+      "description": "Create subtle editorial word-by-word text reveal animations where each word fades and rises into place once it enters the viewport. Use for premium portfolio headlines, hero copy, section intros, and short marketing text that needs a cinematic staggered reveal with IntersectionObserver or in-view detection.",
+      "category": "web-design",
+      "tags": [
+        "staggered",
+        "word",
+        "reveal"
+      ],
+      "path": "agent-skills/web-design/mf-web-staggered-word-reveal",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-tailwindcss",
+      "title": "Tailwind CSS — Utility-first Styling",
+      "description": "Use when designing/implementing UI with Tailwind CSS (layout, typography, responsive, theming, component patterns). Includes quick recipes and conventions for clean, consistent web design.",
+      "category": "web-design",
+      "tags": [
+        "tailwindcss"
+      ],
+      "path": "agent-skills/web-design/mf-web-tailwindcss",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-tech-green-dark-mode-modern",
+      "title": "Tech Green Dark Mode Modern",
+      "description": "Create a modern dark-mode technical design system with matte-black surfaces, emerald signal accents, mono system labeling, framed dashboard cards, and restrained glow.",
+      "category": "web-design",
+      "tags": [
+        "tech",
+        "green",
+        "dark",
+        "mode",
+        "modern"
+      ],
+      "path": "agent-skills/web-design/mf-web-tech-green-dark-mode-modern",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-technical-wireframe-info-layout",
+      "title": "Technical Wireframe Info Layout",
+      "description": "Create a monochrome technical wireframe design system with exploded 3D structure, connector annotations, sparse information labels, and precise dark diagnostic framing.",
+      "category": "web-design",
+      "tags": [
+        "technical",
+        "wireframe",
+        "info",
+        "layout"
+      ],
+      "path": "agent-skills/web-design/mf-web-technical-wireframe-info-layout",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-thinking-orbs",
+      "title": "Thinking Orbs",
+      "description": "Add accessible animated AI loading and agent-status indicators with the React thinking-orbs library. Use when a chat, copilot, voice, search, generation, or tool-running interface needs a semantic working, searching, solving, listening, composing, or shaping state; when replacing a generic spinner with an AI activity orb; or when implementing the library's size, theme, speed, pause, reduced-motion, and canvas behavior.",
+      "category": "web-design",
+      "tags": [
+        "thinking",
+        "orbs"
+      ],
+      "path": "agent-skills/web-design/mf-web-thinking-orbs",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-threejs-landscape",
+      "title": "Three.js Landscape",
+      "description": "Build a live Three.js landscape that stays quiet behind a subject — a noise heightfield on a polar grid so resolution follows the lens, ground coloured by slope and moisture rather than by texture, instanced GPU grass whose wind costs nothing on the CPU, scattered stones, a gradient sky dome, a star field you can actually see, and a time-of-day system that cross-fades instead of cutting. Use for hero backdrops, product stages, scroll worlds, or any scene where a building, object, or figure has to sit in a place rather than float on a gradient.",
+      "category": "web-design",
+      "tags": [
+        "threejs",
+        "landscape"
+      ],
+      "path": "agent-skills/web-design/mf-web-threejs-landscape",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-threejs-towers",
+      "title": "Three.js Towers",
+      "description": "Generate architecture procedurally in Three.js and film it assembling — a small geometry vocabulary that builds pagodas, castles, domes and spires from parameters instead of mesh files, hip roofs with flying eaves driven by a single profile function, and a clipping-plane build animation where everything below a rising line is finished work and scaffolding stands above it. Use for construction studies, architectural title sequences, procedural landmarks, or any hero object that should build itself rather than fade in.",
+      "category": "web-design",
+      "tags": [
+        "threejs",
+        "towers"
+      ],
+      "path": "agent-skills/web-design/mf-web-threejs-towers",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-threejs-weather",
+      "title": "Three.js Weather",
+      "description": "Put weather into a Three.js scene that reads as weather — rain anchored inside the frustum, a storm that is the rain leaned on rather than a second system, lightning on its own light with thunder scheduled by distance, snow that blows up into blizzards and keeps settling until the ground goes white, wet ground with puddles and splashes, and looping ambience that has no seam. Use for scene atmosphere, seasonal states, hero backdrops, or any world where clear/rain/storm/snow needs to be a control the viewer can turn.",
+      "category": "web-design",
+      "tags": [
+        "threejs",
+        "weather"
+      ],
+      "path": "agent-skills/web-design/mf-web-threejs-weather",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-threejs",
+      "title": "Three.js — WebGL 3D Scenes",
+      "description": "Use when building or debugging interactive 3D scenes on the web with Three.js (scene/camera/renderer, lights/materials, GLTF loading, controls, performance). Helpful for designers shipping 3D UI moments.",
+      "category": "web-design",
+      "tags": [
+        "threejs"
+      ],
+      "path": "agent-skills/web-design/mf-web-threejs",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-unicorn-studio",
+      "title": "Unicorn Studio — No-code WebGL Scenes (Embed/SDK)",
+      "description": "Use when embedding and customizing Unicorn Studio interactive animations on the web (embed, responsive sizing, performance, layering with UI, fallbacks).",
+      "category": "web-design",
+      "tags": [
+        "unicorn",
+        "studio"
+      ],
+      "path": "agent-skills/web-design/mf-web-unicorn-studio",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-vantajs",
+      "title": "Vanta.js — Animated WebGL Backgrounds",
+      "description": "Use when adding animated WebGL background effects with Vanta.js (setup, parameters, resizing, performance, integration in React/Next.js).",
+      "category": "web-design",
+      "tags": [
+        "vantajs"
+      ],
+      "path": "agent-skills/web-design/mf-web-vantajs",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-webgl-3d-object",
+      "title": "WebGL 3D Object",
+      "description": "Create a real 3D WebGL object with geometric mesh depth, physically based material, directional and ambient lighting, perspective camera, subtle rotation, and floating motion. Use when a page needs a faceted 3D hero object or product-like visual with real lighting instead of CSS transform tricks.",
+      "category": "web-design",
+      "tags": [
+        "webgl",
+        "3d",
+        "object"
+      ],
+      "path": "agent-skills/web-design/mf-web-webgl-3d-object",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-webgl-landing-steering",
+      "title": "WebGL Landing Steering",
+      "description": "Use when creating or refining WebGL-heavy landing pages and you need to steer toward a specific visual outcome (premium, technical, playful, cinematic) while balancing conversion clarity, performance, and implementation complexity.",
+      "category": "web-design",
+      "tags": [
+        "webgl",
+        "landing",
+        "steering"
+      ],
+      "path": "agent-skills/web-design/mf-web-webgl-landing-steering",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-web-webgl-laser",
+      "title": "WebGL Laser",
+      "description": "Create a fixed full-screen WebGL laser background effect with a thin white-hot vertical core, restrained brand-colored halo, and soft smoky fog around the beam. Use only for laser background effects, not full page layout, copy, generic hero scenes, particles, or unrelated motion systems.",
+      "category": "web-design",
+      "tags": [
+        "webgl",
+        "laser"
+      ],
+      "path": "agent-skills/web-design/mf-web-webgl-laser",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-ui-audit-ai-design-slop",
+      "title": "Audit AI Design Slop",
+      "description": "Audit websites, apps, screenshots, mockups, and design code for harmful AI-design clichés, generic generated defaults, and established UI defects. Use when the user wants evidence-backed design feedback, an anti-slop review, or a removal-first cleanup plan without a speculative redesign.",
+      "category": "ui",
+      "tags": [
+        "audit",
+        "ai",
+        "design",
+        "slop"
+      ],
+      "path": "agent-skills/ui/mf-ui-audit-ai-design-slop",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
       "name": "mf-ui-component-routing",
       "title": "Choose and integrate UI components",
       "description": "Choose and integrate components into an existing UI.",
-      "category": "development",
+      "category": "ui",
       "tags": [
         "components",
         "design-systems",
         "DialKit"
       ],
-      "path": "agent-skills/development/mf-ui-component-routing",
+      "path": "agent-skills/ui/mf-ui-component-routing",
       "reviewedAt": "2026-09-18",
       "sources": [
         "https://www.dialkit.dev/",
@@ -58,23 +1593,419 @@
       "validation": "Editorially reviewed; installer and MCP delivery tested. Downstream implementation outcomes depend on the consuming project."
     },
     {
-      "name": "mf-visual-shader-gradient",
-      "title": "Shader gradients",
-      "description": "Add shader gradients to React projects.",
-      "category": "development",
+      "name": "mf-ui-design-first-ui-prompting",
+      "title": "Design-First UI Prompting",
+      "description": "Use when you need design-first, spec-driven, skimmable prompts for UI generation. Covers prompt structure, constraints, variations, typography/spacing rules, and iteration workflow for consistent UI outputs.",
+      "category": "ui",
       "tags": [
-        "React",
-        "WebGL",
-        "gradients"
+        "design",
+        "first",
+        "ui",
+        "prompting"
       ],
-      "path": "agent-skills/development/mf-visual-shader-gradient",
+      "path": "agent-skills/ui/mf-ui-design-first-ui-prompting",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-ui-taste",
+      "title": "Frontend taste",
+      "description": "Design landing pages, portfolios, and redesigns from the brief and references.",
+      "category": "ui",
+      "tags": [
+        "taste",
+        "frontend",
+        "landing-pages",
+        "design"
+      ],
+      "path": "agent-skills/ui/mf-ui-taste",
+      "sources": [
+        "Adapted local taste-skill; MIT copyright 2026 Leonxlnx. See bundled LICENSE."
+      ],
+      "validation": "Packaging checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-ui-no-ai-design-slop",
+      "title": "No Design Slops",
+      "description": "Prevent and remove generic AI-generated design defaults, incoherent visual choices, and established UI defects while creating, revising, or reviewing websites, apps, screenshots, mockups, and design code. Use as a passive quality gate during UI work or for an explicit anti-slop cleanup; preserve the chosen art direction instead of forcing a neutral redesign.",
+      "category": "ui",
+      "tags": [
+        "no",
+        "ai",
+        "design",
+        "slop"
+      ],
+      "path": "agent-skills/ui/mf-ui-no-ai-design-slop",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-brand-svg-logos",
+      "title": "SVG brand marks",
+      "description": "Find and use SVG brand marks.",
+      "category": "ui",
+      "tags": [
+        "SVG",
+        "logos",
+        "brand"
+      ],
+      "path": "agent-skills/ui/mf-brand-svg-logos",
       "reviewedAt": "2026-09-18",
       "sources": [
-        "https://github.com/ruucm/shadergradient",
-        "https://www.shadergradient.co/"
+        "https://github.com/simple-icons/simple-icons"
       ],
-      "preview": null,
+      "preview": "assets/svg-logo-library.png",
       "validation": "Editorially reviewed; installer and MCP delivery tested. Downstream implementation outcomes depend on the consuming project."
+    },
+    {
+      "name": "mf-game-author-game-levels",
+      "title": "Author Game Levels",
+      "description": "Author or revise readable, flat-world Three.js game levels. Use for movement and camera routes, collision and navigation, encounter zones, landmarks, objectives, pickups, motivated lighting, visibility, deterministic level data, or desktop and mobile playthrough verification.",
+      "category": "game-development",
+      "tags": [
+        "author",
+        "game",
+        "levels"
+      ],
+      "path": "agent-skills/game-development/mf-game-author-game-levels",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-game-build-game-audio-feedback",
+      "title": "Build Game Audio Feedback",
+      "description": "Design or implement responsive audio feedback for a Three.js or web game. Use for action sounds, combat layers, music states, spatial audio, mix priorities, mute controls, accessibility, mobile audio unlock, and audio performance.",
+      "category": "game-development",
+      "tags": [
+        "build",
+        "game",
+        "audio",
+        "feedback"
+      ],
+      "path": "agent-skills/game-development/mf-game-build-game-audio-feedback",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-game-build-game-camera-controls",
+      "title": "Build Game Camera Controls",
+      "description": "Implement or tune Three.js game cameras. Use for isometric framing, follow behavior, orbit/zoom limits, occlusion, lock-on, camera shake, touch camera controls, and camera regression tests.",
+      "category": "game-development",
+      "tags": [
+        "build",
+        "game",
+        "camera",
+        "controls"
+      ],
+      "path": "agent-skills/game-development/mf-game-build-game-camera-controls",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-game-build-game-changelog",
+      "title": "Build Game Changelog",
+      "description": "Design, implement, backfill, audit, and release in-game changelogs with contiguous versioning, deployment provenance, menu-state navigation, accessible toggle, close, and Escape behavior, and responsive release-ledger UI. Use when Codex needs to add or revise a changelog or version screen in a game, reconstruct release history from deployments and Git, define version-bump rules, keep displayed versions synchronized with live builds, or test changelog mechanics across desktop and mobile.",
+      "category": "game-development",
+      "tags": [
+        "build",
+        "game",
+        "changelog"
+      ],
+      "path": "agent-skills/game-development/mf-game-build-game-changelog",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-game-build-game-inventory",
+      "title": "Build Game Inventory",
+      "description": "Build or repair game inventory, loot, equipment, tooltips, drag-and-drop, persistence, and progression systems. Use for item schemas, pickup flows, stack rules, equipment slots, atomic swaps, save migration, and no-loss regression testing.",
+      "category": "game-development",
+      "tags": [
+        "build",
+        "game",
+        "inventory"
+      ],
+      "path": "agent-skills/game-development/mf-game-build-game-inventory",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-game-build-game-map-editor",
+      "title": "Build Game Map Editor",
+      "description": "Build, extend, or audit production-linked browser map editors for Three.js and isometric games. Use when Codex needs to create a private director view, derive a versioned editor document from authored placements, add outliner, layer, selection, drag, snap, inspector, or camera controls, expose enemy aggro, leash, or patrol overlays, implement local draft import, export, undo, and reset, secure an editor route with IP and password sessions, or validate and release a map editor without mutating live gameplay data.",
+      "category": "game-development",
+      "tags": [
+        "build",
+        "game",
+        "map",
+        "editor"
+      ],
+      "path": "agent-skills/game-development/mf-game-build-game-map-editor",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-game-build-game-monster-system",
+      "title": "Build Game Monster System",
+      "description": "Build, integrate, audit, or refactor rigged monsters for Three.js and web action games. Use for monster asset contracts, procedural or imported creature rigs, semantic joints and sockets, hurtboxes and attack volumes, combat animation states, enemy-runtime adapters, LODs, deterministic review fixtures, and validating that every monster follows one shared system.",
+      "category": "game-development",
+      "tags": [
+        "build",
+        "game",
+        "monster",
+        "system"
+      ],
+      "path": "agent-skills/game-development/mf-game-build-game-monster-system",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-game-build-hybrid-game-assets",
+      "title": "Build Hybrid Game Assets",
+      "description": "Plan, create, integrate, or audit a hybrid asset pipeline for a Three.js or web game. Use when choosing among imported meshes, procedural 3D geometry, AI-generated reference art, 2D UI media, sprites, VFX, and performance-ready runtime asset delivery.",
+      "category": "game-development",
+      "tags": [
+        "build",
+        "hybrid",
+        "game",
+        "assets"
+      ],
+      "path": "agent-skills/game-development/mf-game-build-hybrid-game-assets",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-game-build-isometric-arpg",
+      "title": "Build Isometric ARPG",
+      "description": "Build or extend a playable isometric action RPG in Three.js, React, or similar web technology. Use for game-loop architecture, camera and movement, zones, combat integration, content data, progression, saves, or production-ready vertical slices.",
+      "category": "game-development",
+      "tags": [
+        "build",
+        "isometric",
+        "arpg"
+      ],
+      "path": "agent-skills/game-development/mf-game-build-isometric-arpg",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-game-build-mobile-threejs-games",
+      "title": "Build Mobile Three.js Games",
+      "description": "Build, tune, or test a Three.js game for mobile web. Use for touch movement, action controls, target selection, touch inventory, safe areas, portrait/landscape layouts, responsive HUD, battery/performance budgets, and real mobile browser QA.",
+      "category": "game-development",
+      "tags": [
+        "build",
+        "mobile",
+        "threejs",
+        "games"
+      ],
+      "path": "agent-skills/game-development/mf-game-build-mobile-threejs-games",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-game-build-rigged-game-assets",
+      "title": "Build Rigged Game Assets",
+      "description": "Create, integrate, or audit production-ready rigged 3D characters and monsters with a main model, skeleton, animation library, sockets, collision contracts, separate character equipment, optimized runtime files, catalog media, and an interactive moveset inspector. Use when generating or importing FBX/GLB game actors; defining character-versus-monster asset requirements; separating swords, shields, helmets, armor, or stowed gear; adding idle, walk, run, attack, hit, dodge, block, cast, or death clips; wiring an asset into gameplay; or adding action and equipment controls plus deterministic tests to a game asset catalog.",
+      "category": "game-development",
+      "tags": [
+        "build",
+        "rigged",
+        "game",
+        "assets"
+      ],
+      "path": "agent-skills/game-development/mf-game-build-rigged-game-assets",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-game-build-threejs-enemy-systems",
+      "title": "Build Three.js Enemy Systems",
+      "description": "Build or refactor reusable, data-driven enemy archetype and moveset systems for Three.js action games. Use for enemy content schemas, model and rig conventions, combat move timing and contact contracts, runtime state boundaries, placeholder fallbacks, deterministic fixtures, or production playthrough validation.",
+      "category": "game-development",
+      "tags": [
+        "build",
+        "threejs",
+        "enemy",
+        "systems"
+      ],
+      "path": "agent-skills/game-development/mf-game-build-threejs-enemy-systems",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-game-build-vesperfall-review-assets",
+      "title": "Build Vesperfall Review Assets",
+      "description": "Build truthful Vesperfall asset-library review pairs from transparent PNG references and live Three.js, FBX, or img2threejs models. Use when adding a character, enemy, prop, or equipment asset to the Vesperfall catalog; creating a card-PNG plus inspector-model treatment; exposing an isolated model or moveset route; or standardizing provenance, grounding, tests, and Codex-browser validation for game art review.",
+      "category": "game-development",
+      "tags": [
+        "build",
+        "vesperfall",
+        "review",
+        "assets"
+      ],
+      "path": "agent-skills/game-development/mf-game-build-vesperfall-review-assets",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-game-create-game-vfx",
+      "title": "Create Game VFX",
+      "description": "Create readable, performance-safe Three.js game visual effects. Use for attacks, impacts, damage feedback, status effects, spell trails, particles, shaders, telegraphs, quality tiers, and reduced-motion alternatives.",
+      "category": "game-development",
+      "tags": [
+        "create",
+        "game",
+        "vfx"
+      ],
+      "path": "agent-skills/game-development/mf-game-create-game-vfx",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-game-design-action-combat",
+      "title": "Design Action Combat",
+      "description": "Design, implement, tune, or test readable tactical action combat for web games. Use for attack timing, guard and dodge windows, hit contact, posture, lock-on, weapons, boss phases, combat feedback, and deterministic combat tests.",
+      "category": "game-development",
+      "tags": [
+        "design",
+        "action",
+        "combat"
+      ],
+      "path": "agent-skills/game-development/mf-game-design-action-combat",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-game-design-game-encounters",
+      "title": "Design Game Encounters",
+      "description": "Design, implement, tune, or test Three.js action-game encounters. Use for arena layout, enemy composition, spawn pacing, objectives, boss phases, reward cadence, encounter fixtures, and difficulty validation.",
+      "category": "game-development",
+      "tags": [
+        "design",
+        "game",
+        "encounters"
+      ],
+      "path": "agent-skills/game-development/mf-game-design-game-encounters",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-game-optimize-threejs-games",
+      "title": "Optimize Three.js Games",
+      "description": "Profile, diagnose, and improve Three.js or WebGL game performance without regressing gameplay. Use for frame-time drops, CPU/GPU pressure, draw calls, texture and geometry budgets, animation loops, adaptive quality, mobile performance, and browser performance verification.",
+      "category": "game-development",
+      "tags": [
+        "optimize",
+        "threejs",
+        "games"
+      ],
+      "path": "agent-skills/game-development/mf-game-optimize-threejs-games",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-game-ship-web-games",
+      "title": "Ship Web Games",
+      "description": "Package, deploy, and verify a playable Three.js or web game. Use for release builds, asset delivery, private/public deployment, production smoke tests, browser proof, release notes, rollback readiness, and cleanup of temporary QA resources.",
+      "category": "game-development",
+      "tags": [
+        "ship",
+        "web",
+        "games"
+      ],
+      "path": "agent-skills/game-development/mf-game-ship-web-games",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-game-test-playable-web-games",
+      "title": "Test Playable Web Games",
+      "description": "Test a playable browser game end to end with deterministic fixtures and real browser evidence. Use for gameplay QA, regression testing, controls, accessibility, responsive/mobile testing, save flows, console checks, performance smoke tests, and release verification.",
+      "category": "game-development",
+      "tags": [
+        "test",
+        "playable",
+        "web",
+        "games"
+      ],
+      "path": "agent-skills/game-development/mf-game-test-playable-web-games",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-game-tune-enemy-ai",
+      "title": "Tune Enemy AI",
+      "description": "Build, debug, balance, or test combat enemy AI for playable action games. Use for aggro, target selection, navigation, spacing, attack choices, telegraphs, retreats, boss behavior, behavior-state machines, and deterministic AI regression tests.",
+      "category": "game-development",
+      "tags": [
+        "tune",
+        "enemy",
+        "ai"
+      ],
+      "path": "agent-skills/game-development/mf-game-tune-enemy-ai",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-media-aura-asset-images",
+      "title": "Aura Asset Images (Unsplash-style)",
+      "description": "Use when you need high-quality stock-style images from Aura Assets (aura.build/assets) similar to Unsplash for design mockups and marketing: backgrounds, abstract wallpapers, architecture, portraits, and headshots. Includes a workflow for searching by tag on aura.build/assets and returns 5 real image URLs per category plus practical guidance for using different resolutions and aspect ratios.",
+      "category": "media",
+      "tags": [
+        "aura",
+        "asset",
+        "images"
+      ],
+      "path": "agent-skills/media/mf-media-aura-asset-images",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
     },
     {
       "name": "mf-media-image-compression",
@@ -95,6 +2026,375 @@
       ],
       "preview": "assets/image-compression.png",
       "validation": "Editorially reviewed; installer and MCP delivery tested. Downstream implementation outcomes depend on the consuming project."
+    },
+    {
+      "name": "mf-media-unsplash-asset-images",
+      "title": "Unsplash Asset Images (Avatars, Portraits, Backgrounds, Wallpapers)",
+      "description": "Use when you need to pick high-quality Unsplash images for product/design assets (avatars, headshots, portraits, large website backgrounds, and abstract wallpapers) and output real Unsplash URLs plus practical instructions for producing the right resolutions and aspect ratios (1:1, 4:5, 3:4, 16:9, 9:16).",
+      "category": "media",
+      "tags": [
+        "unsplash",
+        "asset",
+        "images"
+      ],
+      "path": "agent-skills/media/mf-media-unsplash-asset-images",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-agent-article-prompts-to-skills",
+      "title": "Article Prompts to Skills",
+      "description": "Convert an article, tutorial, or prompt pack into focused reusable AgentSkills, one independent capability per skill, with portable instructions, example prompts, working demos, preview screenshots, validation, gallery updates, and a narrow commit. Use when the user asks to turn an article's prompts, tutorial sections, design patterns, interactions, or workflow ideas into complete skills rather than leaving them as prose.",
+      "category": "codex",
+      "tags": [
+        "article",
+        "prompts",
+        "to",
+        "skills"
+      ],
+      "path": "agent-skills/codex/mf-agent-article-prompts-to-skills",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-agent-audit-reference-originality",
+      "title": "Audit Reference Originality",
+      "description": "Audit a website or digital experience against its supplied source references for originality and plagiarism risk. Use when Codex must compare current or historical site output with reference pages, capture packs, screenshots, copy, brands, numbers, images, assets, videos, layouts, motion, or code; raise evidence-backed red flags; distinguish common visual grammar from distinctive copying; and propose concrete fixes without making unsupported legal claims.",
+      "category": "codex",
+      "tags": [
+        "audit",
+        "reference",
+        "originality"
+      ],
+      "path": "agent-skills/codex/mf-agent-audit-reference-originality",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-agent-audit-verify-explain-grade-5",
+      "title": "Audit, Verify, Explain",
+      "description": "Audit work, verify claims with concrete evidence, and explain the result in simple grade-5 language. Use when the user asks to review, audit, check, verify, explain a change, explain a fix, summarize test results, validate whether something works, or translate technical findings into plain language for non-technical readers.",
+      "category": "codex",
+      "tags": [
+        "audit",
+        "verify",
+        "explain",
+        "grade",
+        "5"
+      ],
+      "path": "agent-skills/codex/mf-agent-audit-verify-explain-grade-5",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-agent-browser-video-recording",
+      "title": "Browser Video Recording",
+      "description": "Create polished 60 fps 4:3 4K browser screen-recording style videos from Codex in-app browser captures, with browser-only crop, natural macOS cursor styling, deliberate click choreography, zoom-follow framing, ffprobe/thumbnail verification, and optional native recording compatibility checks. Use when the user asks to record or re-record browser actions, show cursor clicks and zooms, make Dribbble/UI inspiration or product demo recordings, or asks whether Codex, Playwright, or an MCP can produce a natural browser demo video.",
+      "category": "codex",
+      "tags": [
+        "browser",
+        "video",
+        "recording"
+      ],
+      "path": "agent-skills/codex/mf-agent-browser-video-recording",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-agent-build-daily-inspiration-sites",
+      "title": "Build Daily Inspiration Sites",
+      "description": "Turn a completed daily UI inspiration capture into exactly five original landing-page builds, one per separate Codex task, using Sites. Use when the user asks to turn the daily inspiration references, a five-item UI prompt pack, or a dated `*-ui-inspiration-capture` article into distinct HTML landing pages while changing the source brands, names, copy, people, numbers, pricing, claims, and imagery.",
+      "category": "codex",
+      "tags": [
+        "build",
+        "daily",
+        "inspiration",
+        "sites"
+      ],
+      "path": "agent-skills/codex/mf-agent-build-daily-inspiration-sites",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-agent-codex-gpt-image-2-5-flare",
+      "title": "Codex GPT Image 2.5 Flare",
+      "description": "Generate or edit artwork with built-in Codex image gen, especially transparent PNG ornaments, game sprites, emblems, and UI graphics. Use when the user requests GPT 2.5 Flare, /codex-gpt-image-2-5-flare, or this built-in transparent-asset workflow. Includes alpha verification, prompt preservation, and optional project integration.",
+      "category": "codex",
+      "tags": [
+        "codex",
+        "gpt",
+        "image",
+        "2",
+        "5",
+        "flare"
+      ],
+      "path": "agent-skills/codex/mf-agent-codex-gpt-image-2-5-flare",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-agent-daily-ui-inspiration-capture",
+      "title": "Daily UI Inspiration Capture",
+      "description": "Create a recurring daily UI inspiration capture. Use when the user asks to run, refresh, package, or validate dated UI inspiration bundles, especially for `articles/YYYY-MM-DD-ui-inspiration-capture/` outputs, Framer/Dribbble landing-page inspiration, motion-study screenshots/videos, AI-builder prompts, duplicate checking, or converting a project runbook into repeatable workflow.",
+      "category": "codex",
+      "tags": [
+        "daily",
+        "ui",
+        "inspiration",
+        "capture"
+      ],
+      "path": "agent-skills/codex/mf-agent-daily-ui-inspiration-capture",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-agent-elevenlabs-tts",
+      "title": "ElevenLabs TTS",
+      "description": "Generate ElevenLabs text-to-speech audio from scripts or inline text using local voice profiles. Use when the user asks for ElevenLabs, text-to-speech, TTS, narration, voiceover, speech audio, or voice generation; load voice names, voice ids, emails, owners, and account-specific defaults only from local config outside the skill.",
+      "category": "codex",
+      "tags": [
+        "elevenlabs",
+        "tts"
+      ],
+      "path": "agent-skills/codex/mf-agent-elevenlabs-tts",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-agent-generate-reference-inspired-brand-worlds",
+      "title": "Generate Reference-Inspired Brand Worlds",
+      "description": "Generate multiple original brand campaign worlds from a supplied visual reference while controlling how close the new work feels without copying protected signature elements. Use when a user provides a brand identity image, poster, editorial campaign, moodboard, or generated concept and asks for inspired alternatives, several distinct brands in one visual family, a closer-to-reference V2, exact wordmarks inside images, or originality-safe image-generation prompts and outputs.",
+      "category": "codex",
+      "tags": [
+        "generate",
+        "reference",
+        "inspired",
+        "brand",
+        "worlds"
+      ],
+      "path": "agent-skills/codex/mf-agent-generate-reference-inspired-brand-worlds",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-agent-html-to-interaction-prompts",
+      "title": "HTML To Interaction Prompts",
+      "description": "Convert a supplied HTML page or generated HTML reference into a screenshot-backed article containing multiple reusable interaction prompts. Use when the user provides an HTML file, exported page, generated-page.html, or local/live reference and asks to extract animation/interactions, create prompts, capture screenshots for each prompt, add them to an article, or commit the resulting article/assets.",
+      "category": "codex",
+      "tags": [
+        "html",
+        "to",
+        "interaction",
+        "prompts"
+      ],
+      "path": "agent-skills/codex/mf-agent-html-to-interaction-prompts",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-agent-implement-fog-of-war",
+      "title": "Implement Fog of War",
+      "description": "Implement, tune, debug, or validate soft wall-aware fog of war and gameplay perception in Three.js action games. Use for orthographic or isometric visibility masks, obstacle-aware line of sight, player and enemy vision ranges, hidden-enemy targeting rules, fog shader artifacts such as spokes or seams, mobile ray budgets, lifecycle and menu-state integration, and deterministic fog-of-war tests.",
+      "category": "codex",
+      "tags": [
+        "implement",
+        "fog",
+        "of",
+        "war"
+      ],
+      "path": "agent-skills/codex/mf-agent-implement-fog-of-war",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-agent-iterate-until-verified",
+      "title": "Iterate Until Verified",
+      "description": "Apply a prompt-agnostic execution and verification loop to any substantial task while preserving the original request. Use when the user asks to fan out work, use subagents or independent reviewers, loop until done, benchmark against references, apply a harsh critic, compare candidates blind, improve an existing prompt with verification, or continue until explicit quality gates pass.",
+      "category": "codex",
+      "tags": [
+        "iterate",
+        "until",
+        "verified"
+      ],
+      "path": "agent-skills/codex/mf-agent-iterate-until-verified",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-agent-optimize-web-animations",
+      "title": "Optimize Web Animations",
+      "description": "Profile, audit, and optimize frontend page performance with emphasis on animation work, memory-leak risks, long-session slowdowns, CSS animations, canvas/WebGL requestAnimationFrame loops, marquees, skeletons, GSAP/Three/Matter effects, timers, listeners, and observers. Use when the user asks to make animations performant, pause offscreen animations, look for memory leaks, profile pages that slow the computer over time, fix janky scrolling, reduce CPU/GPU use, or repeat the \"only play in view\" optimization on React/Vite/Next/frontend pages using Codex Browser.",
+      "category": "codex",
+      "tags": [
+        "optimize",
+        "web",
+        "animations"
+      ],
+      "path": "agent-skills/codex/mf-agent-optimize-web-animations",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-agent-performance-profiling",
+      "title": "Performance Profiling",
+      "description": "Guide performance profiling for Apple platform apps with Instruments, Xcode diagnostics, and MetricKit. Use when investigating app hangs, stutters, high CPU, memory leaks, memory growth, OOM crashes, slow launch, battery drain, thermal issues, App Store performance readiness, or when adding os_signpost and measurement hooks.",
+      "category": "codex",
+      "tags": [
+        "performance",
+        "profiling"
+      ],
+      "path": "agent-skills/codex/mf-agent-performance-profiling",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-agent-publish-project-to-github",
+      "title": "Publish Project to GitHub",
+      "description": "Package a finished local project into an intentional GitHub repository, create a strong README and visual preview, push it safely, configure a public GitHub Pages URL when the project is compatible, and verify the deployed result. Use when a user asks to upload, publish, open-source, share, or turn a local HTML/CSS/JavaScript experiment or small web project into a documented GitHub repository with a live demo.",
+      "category": "codex",
+      "tags": [
+        "publish",
+        "project",
+        "to",
+        "github"
+      ],
+      "path": "agent-skills/codex/mf-agent-publish-project-to-github",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-agent-stitched-full-page-capture",
+      "title": "Stitched Full-Page Capture",
+      "description": "Capture or repair reliable full-page screenshots for lazy-loaded, scroll-animated, Framer, WebGL/canvas, or reveal-heavy web pages. Use when full-page screenshots are blank, gray, white, sparse, show a tiny content strip, disagree with a working scroll video, or when article evidence/section crops must be derived from a trustworthy full-page image.",
+      "category": "codex",
+      "tags": [
+        "stitched",
+        "full",
+        "page",
+        "capture"
+      ],
+      "path": "agent-skills/codex/mf-agent-stitched-full-page-capture",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-ui-reference-catalog",
+      "title": "UI recording to evidence catalog",
+      "description": "Turn UI recordings into timestamped references and interaction notes.",
+      "category": "codex",
+      "tags": [
+        "video",
+        "UI",
+        "reference",
+        "motion"
+      ],
+      "path": "agent-skills/codex/mf-ui-reference-catalog",
+      "reviewedAt": "2026-09-18",
+      "sources": [
+        "Adapted reference workflow; see ATTRIBUTION.md"
+      ],
+      "preview": null,
+      "validation": "Editorially reviewed; installer and MCP delivery tested. Downstream implementation outcomes depend on the consuming project."
+    },
+    {
+      "name": "mf-agent-video-to-superprompt",
+      "title": "Video To Superprompt",
+      "description": "Turn a reference video into a super detailed recreation or inspiration prompt. Use when the user provides, mentions, uploads, links, or points to a video and asks to analyze the design, UI, animations, transitions, scroll interactions, typography, colors, assets, WebGL/Three.js, storytelling, section-by-section behavior, or to create a prompt/article that recreates the page, app, interaction, or motion system.",
+      "category": "codex",
+      "tags": [
+        "video",
+        "to",
+        "superprompt"
+      ],
+      "path": "agent-skills/codex/mf-agent-video-to-superprompt",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-agent-web-technique-to-skill",
+      "title": "Web Technique to",
+      "description": "Turn a visual or interaction technique you already built into a reusable web-design skill, by isolating the one mechanism that makes it work while reproducing its approved reference exactly around that focus, and packaging it with a demo that proves both the mechanism and the visual fidelity. Covers finding the mechanism, naming the technique plainly, disclosing the verified runtime and renderer, auditing reference layers, carrying real numbers instead of adjectives, preserving owned staging, keeping expensive gotchas, declaring the boundary against neighbouring skills, and browser-verifying before claiming it works. Use when a page, canvas scene, shader, scroll effect, layout system, or hover interaction turned out well and should become a skill rather than staying in one project.",
+      "category": "codex",
+      "tags": [
+        "web",
+        "technique",
+        "to",
+        "skill"
+      ],
+      "path": "agent-skills/codex/mf-agent-web-technique-to-skill",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-agent-x-bookmark-quote-posts",
+      "title": "X Bookmark Quote Posts",
+      "description": "Check a user's latest X/Twitter bookmarks and turn recent saved posts into source-backed quote-post drafts calibrated against the user's latest 100 authored posts. Use when asked to review X bookmarks, create quote posts from bookmarks, refresh a bookmark quote queue, run a bookmark quote automation, study a user's X voice, or write first-person quote posts from X sources.",
+      "category": "codex",
+      "tags": [
+        "x",
+        "bookmark",
+        "quote",
+        "posts"
+      ],
+      "path": "agent-skills/codex/mf-agent-x-bookmark-quote-posts",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
+    },
+    {
+      "name": "mf-agent-x-posts",
+      "title": "X posts",
+      "description": "Draft and edit X posts using the user's supplied writing samples, product facts, and preferred tone. Use for launch posts, build updates, replies, and short threads.",
+      "category": "codex",
+      "tags": [
+        "writing",
+        "posts",
+        "X"
+      ],
+      "path": "agent-skills/codex/mf-agent-x-posts",
+      "sources": [
+        "MIT; copyright 2026 Meng To. See bundled LICENSE."
+      ],
+      "validation": "Packaging and delivery checked; individual workflows not executed."
     }
   ]
 }

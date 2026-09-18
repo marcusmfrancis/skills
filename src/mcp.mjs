@@ -4,10 +4,10 @@ import { z } from 'zod';
 import { catalog, list, read } from './catalog.mjs';
 
 export async function start() {
-  const server = new McpServer({ name: 'mf-skills', version: '0.1.1' });
+  const server = new McpServer({ name: 'mf-skills', version: '0.2.0' });
   const annotations = { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false };
   server.registerTool('mf_skills_list', {
-    description: 'List or search the bundled personal-brand skill catalog. Does not execute instructions.',
+    description: 'List or search the skill catalog. Does not execute instructions.',
     inputSchema: { query: z.string().max(500).optional() }, annotations,
   }, async ({ query }) => ({ content: [{ type: 'text', text: JSON.stringify(list(query), null, 2) }] }));
   server.registerTool('mf_skills_read', {

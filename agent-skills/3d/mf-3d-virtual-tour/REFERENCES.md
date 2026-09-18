@@ -1,0 +1,8 @@
+- Seijaku authored camera route and sampler
+- Seijaku orbit inspection and handoff
+- Seijaku rooms and floor-plan navigation
+- [Three.js Curve](https://threejs.org/docs/pages/Curve.html)
+- [Three.js CatmullRomCurve3](https://threejs.org/docs/pages/CatmullRomCurve3.html)
+- [Three.js PerspectiveCamera](https://threejs.org/docs/pages/PerspectiveCamera.html)
+- [Three.js OrbitControls](https://threejs.org/docs/pages/OrbitControls.html)
+- [Three.js PointerLockControls](https://threejs.org/docs/pages/PointerLockControls.html)
