@@ -1,13 +1,35 @@
 {
   "name": "@marcusmfrancis/skills",
-  "version": "0.1.0",
-  "description": "Marcus M Francis agent skills, installer and read-only MCP catalog",
+  "version": "0.1.1",
+  "description": "Skills, installer and read-only MCP catalog",
   "type": "module",
   "license": "MIT",
-  "engines": {"node": ">=20"},
-  "bin": {"mf-skills": "bin/mf-skills.mjs"},
-  "files": ["bin", "src", "agent-skills", "catalog.json", "README.md", "LICENSE", "ATTRIBUTION.md"],
-  "scripts": {"test": "node --test tests/*.test.mjs", "docs": "node src/docs.mjs", "docs:check": "node src/docs.mjs --check"},
-  "dependencies": {"@modelcontextprotocol/sdk": "1.30.0", "zod": "3.25.76"},
-  "repository": {"type": "git", "url": "https://github.com/marcusmfrancis/skills.git"}
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "mf-skills": "bin/mf-skills.mjs"
+  },
+  "files": [
+    "bin",
+    "src",
+    "agent-skills",
+    "catalog.json",
+    "README.md",
+    "LICENSE",
+    "ATTRIBUTION.md"
+  ],
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "docs": "node src/docs.mjs",
+    "docs:check": "node src/docs.mjs --check"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "zod": "3.25.76"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcusmfrancis/skills.git"
+  }
 }

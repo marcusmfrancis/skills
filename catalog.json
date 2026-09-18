@@ -2,16 +2,72 @@
   "version": 1,
   "skills": [
     {
+      "name": "mf-brand-svg-logos",
+      "title": "SVG brand marks",
+      "description": "Find and use SVG brand marks.",
+      "category": "design",
+      "tags": [
+        "SVG",
+        "logos",
+        "brand"
+      ],
+      "path": "agent-skills/design/mf-brand-svg-logos",
+      "reviewedAt": "2026-09-18",
+      "sources": [
+        "https://github.com/simple-icons/simple-icons"
+      ],
+      "preview": "assets/svg-logo-library.png",
+      "validation": "Editorially reviewed; installer and MCP delivery tested. Downstream implementation outcomes depend on the consuming project."
+    },
+    {
+      "name": "mf-ui-reference-catalog",
+      "title": "UI recording to evidence catalog",
+      "description": "Turn UI recordings into timestamped references and interaction notes.",
+      "category": "design",
+      "tags": [
+        "video",
+        "UI",
+        "reference",
+        "motion"
+      ],
+      "path": "agent-skills/design/mf-ui-reference-catalog",
+      "reviewedAt": "2026-09-18",
+      "sources": [
+        "https://github.com/MengTo/Skills"
+      ],
+      "preview": null,
+      "validation": "Editorially reviewed; installer and MCP delivery tested. Downstream implementation outcomes depend on the consuming project."
+    },
+    {
+      "name": "mf-ui-component-routing",
+      "title": "Choose and integrate UI components",
+      "description": "Choose and integrate components into an existing UI.",
+      "category": "development",
+      "tags": [
+        "components",
+        "design-systems",
+        "DialKit"
+      ],
+      "path": "agent-skills/development/mf-ui-component-routing",
+      "reviewedAt": "2026-09-18",
+      "sources": [
+        "https://www.dialkit.dev/",
+        "https://www.dialkit.dev/agent"
+      ],
+      "preview": null,
+      "validation": "Editorially reviewed; installer and MCP delivery tested. Downstream implementation outcomes depend on the consuming project."
+    },
+    {
       "name": "mf-visual-shader-gradient",
       "title": "Shader gradients",
-      "description": "Add a React WebGL gradient with theme-aware colors, reduced-motion behavior and a useful static fallback.",
-      "category": "visual",
+      "description": "Add shader gradients to React projects.",
+      "category": "development",
       "tags": [
         "React",
         "WebGL",
         "gradients"
       ],
-      "path": "agent-skills/visual/mf-visual-shader-gradient",
+      "path": "agent-skills/development/mf-visual-shader-gradient",
       "reviewedAt": "2026-09-18",
       "sources": [
         "https://github.com/ruucm/shadergradient",
@@ -23,7 +79,7 @@
     {
       "name": "mf-media-image-compression",
       "title": "Image compression",
-      "description": "Create web-ready image derivatives with Sharp while preserving source images and checking size, dimensions and visible quality.",
+      "description": "Resize and compress images while preserving the originals.",
       "category": "media",
       "tags": [
         "Sharp",
@@ -38,81 +94,6 @@
         "https://github.com/lovell/sharp"
       ],
       "preview": "assets/image-compression.png",
-      "validation": "Editorially reviewed; installer and MCP delivery tested. Downstream implementation outcomes depend on the consuming project."
-    },
-    {
-      "name": "mf-data-line-chart",
-      "title": "Dashboard line charts",
-      "description": "Integrate a source-attributed BKLIT line chart with explicit data semantics, missing-data behavior and accessible summaries.",
-      "category": "data",
-      "tags": [
-        "BKLIT",
-        "charts",
-        "dashboards"
-      ],
-      "path": "agent-skills/data/mf-data-line-chart",
-      "reviewedAt": "2026-09-18",
-      "sources": [
-        "https://bklit.com/",
-        "https://github.com/octanehouse/octane-skill-bklit-line-chart"
-      ],
-      "preview": "assets/bklit-line-chart.png",
-      "validation": "Editorially reviewed; installer and MCP delivery tested. Downstream implementation outcomes depend on the consuming project."
-    },
-    {
-      "name": "mf-brand-svg-logos",
-      "title": "SVG brand marks",
-      "description": "Use official SVG brand marks or Simple Icons without distorting geometry, inventing identity assets or implying endorsement.",
-      "category": "brand",
-      "tags": [
-        "SVG",
-        "logos",
-        "brand"
-      ],
-      "path": "agent-skills/brand/mf-brand-svg-logos",
-      "reviewedAt": "2026-09-18",
-      "sources": [
-        "https://github.com/simple-icons/simple-icons"
-      ],
-      "preview": "assets/svg-logo-library.png",
-      "validation": "Editorially reviewed; installer and MCP delivery tested. Downstream implementation outcomes depend on the consuming project."
-    },
-    {
-      "name": "mf-ui-reference-catalog",
-      "title": "UI recording to evidence catalog",
-      "description": "Turn a supplied UI recording into timestamped screenshots and an interaction catalog that separates observed behavior from inferred implementation.",
-      "category": "ui",
-      "tags": [
-        "video",
-        "UI",
-        "reference",
-        "motion"
-      ],
-      "path": "agent-skills/ui/mf-ui-reference-catalog",
-      "reviewedAt": "2026-09-18",
-      "sources": [
-        "https://github.com/MengTo/Skills"
-      ],
-      "preview": null,
-      "validation": "Editorially reviewed; installer and MCP delivery tested. Downstream implementation outcomes depend on the consuming project."
-    },
-    {
-      "name": "mf-ui-component-routing",
-      "title": "Choose and integrate UI components",
-      "description": "Select UI components from the host design system and inspect compatibility, rights and interaction behavior before introducing another library.",
-      "category": "ui",
-      "tags": [
-        "components",
-        "design-systems",
-        "DialKit"
-      ],
-      "path": "agent-skills/ui/mf-ui-component-routing",
-      "reviewedAt": "2026-09-18",
-      "sources": [
-        "https://www.dialkit.dev/",
-        "https://www.dialkit.dev/agent"
-      ],
-      "preview": null,
       "validation": "Editorially reviewed; installer and MCP delivery tested. Downstream implementation outcomes depend on the consuming project."
     }
   ]

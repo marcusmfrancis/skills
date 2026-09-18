@@ -1,66 +1,46 @@
-# MF Skills
+# Skills
 
-**Agent skills by Marcus M Francis.** Practical workflows for interfaces, visual tools and reference-driven work. Read a skill, install its folder, or let your agent retrieve it through MCP.
+[Install](#install) · [MCP setup](docs/MCP.md) · [Previews](SCREENSHOTS.md)
 
-[Website](https://marcusmfrancis.com) · [Existing interactive tools](https://marcusmfrancis.com/skills) · [Previews](SCREENSHOTS.md) · [MCP setup](docs/MCP.md) · [Sources](ATTRIBUTION.md)
+## Design
 
-## Start here
+| Skill | What it does |
+|---|---|
+| [SVG brand marks](agent-skills/design/mf-brand-svg-logos/SKILL.md) | Find and use SVG brand marks. |
+| [UI recording to evidence catalog](agent-skills/design/mf-ui-reference-catalog/SKILL.md) | Turn UI recordings into timestamped references and interaction notes. |
 
-Node.js 20 or newer is required for the CLI and MCP. Markdown can be read without installing anything.
+## Development
+
+| Skill | What it does |
+|---|---|
+| [Choose and integrate UI components](agent-skills/development/mf-ui-component-routing/SKILL.md) | Choose and integrate components into an existing UI. |
+| [Shader gradients](agent-skills/development/mf-visual-shader-gradient/SKILL.md) | Add shader gradients to React projects. |
+
+## Media
+
+| Skill | What it does |
+|---|---|
+| [Image compression](agent-skills/media/mf-media-image-compression/SKILL.md) | Resize and compress images while preserving the originals. |
+
+## Install
+
+Requires Node.js 20+.
 
 ```sh
-npx --yes github:marcusmfrancis/skills#v0.1.0 list
-npx --yes github:marcusmfrancis/skills#v0.1.0 read mf-ui-reference-catalog
-npx --yes github:marcusmfrancis/skills#v0.1.0 install mf-ui-reference-catalog --dest .agents/skills
+npx --yes github:marcusmfrancis/skills#v0.1.1 list
+npx --yes github:marcusmfrancis/skills#v0.1.1 install mf-ui-reference-catalog --dest .agents/skills
 ```
 
-The installer copies the complete skill folder into the explicit destination. It refuses to overwrite an existing folder. Review changes before replacing an earlier installation. Installing Markdown does not execute it or install its optional third-party tools.
+Or open a skill's `SKILL.md` directly. The installer copies it to the chosen directory and refuses to overwrite an existing installation.
 
-For any coding agent, ask it to read the installed SKILL.md and follow it for the relevant task. Native automatic discovery varies by client; this installer does not modify global settings or guarantee every client discovers .agents/skills.
+## MCP
 
-## Library
+[MCP setup](docs/MCP.md) lets compatible clients search and read the library through a local server.
 
-### Visual
+## Contributing
 
-| Skill | Use it for |
-|---|---|
-| [mf-visual-shader-gradient](agent-skills/visual/mf-visual-shader-gradient/SKILL.md) | Add a React WebGL gradient with theme-aware colors, reduced-motion behavior and a useful static fallback. |
+Use `mf-<skill-name>`, or `mf-<category>-<skill-name>` for related skills. The prefix is for identification and search. Categories group tasks; tags identify specific tools and topics.
 
-### Media
+Add the skill to `catalog.json`, then run `npm run docs` and `npm test`.
 
-| Skill | Use it for |
-|---|---|
-| [mf-media-image-compression](agent-skills/media/mf-media-image-compression/SKILL.md) | Create web-ready image derivatives with Sharp while preserving source images and checking size, dimensions and visible quality. |
-
-### Data
-
-| Skill | Use it for |
-|---|---|
-| [mf-data-line-chart](agent-skills/data/mf-data-line-chart/SKILL.md) | Integrate a source-attributed BKLIT line chart with explicit data semantics, missing-data behavior and accessible summaries. |
-
-### Brand
-
-| Skill | Use it for |
-|---|---|
-| [mf-brand-svg-logos](agent-skills/brand/mf-brand-svg-logos/SKILL.md) | Use official SVG brand marks or Simple Icons without distorting geometry, inventing identity assets or implying endorsement. |
-
-### UI
-
-| Skill | Use it for |
-|---|---|
-| [mf-ui-reference-catalog](agent-skills/ui/mf-ui-reference-catalog/SKILL.md) | Turn a supplied UI recording into timestamped screenshots and an interaction catalog that separates observed behavior from inferred implementation. |
-| [mf-ui-component-routing](agent-skills/ui/mf-ui-component-routing/SKILL.md) | Select UI components from the host design system and inspect compatibility, rights and interaction behavior before introducing another library. |
-
-## Connect your agent
-
-Use the [read-only MCP server](docs/MCP.md) to search and read this catalog. It exposes two tools and one Markdown resource per skill; it cannot install files, publish or deploy. The server runs locally over stdio. No hosted personal endpoint is provided in this release.
-
-## Keep it current
-
-Every new skill uses `mf-<category>-<skill-name>`. Add it under `agent-skills/<category>/<name>/SKILL.md`, register it in `catalog.json`, then run `npm run docs` and `npm test`. Review upstream APIs in the consuming project before installing components.
-
-The first six guides were editorially reviewed on 2026-09-18. Catalog, installation and MCP delivery are checked automatically. That does not certify every downstream UI implementation, dependency combination or creative result. Previews show existing public site examples; the two recent UI workflows are guidance, not shipped UI demos.
-
-## Attribution and license
-
-Original instructions and tooling: MIT. Upstream components, brands and preview content retain their respective rights; see [ATTRIBUTION.md](ATTRIBUTION.md). Presentation is inspired by [MengTo/Skills](https://github.com/MengTo/Skills), without bulk-copying its library.
+[License](LICENSE) · [Attribution](ATTRIBUTION.md)

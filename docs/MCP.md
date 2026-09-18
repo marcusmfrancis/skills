@@ -1,4 +1,4 @@
-# Connect MF Skills through MCP
+# MCP setup
 
 This is the personal catalog for marcusmfrancis/skills. It is separate from the existing Octane website endpoint.
 
@@ -9,7 +9,7 @@ Requires Node.js 20+ and an MCP client that supports local stdio servers. Add th
   "mcpServers": {
     "mf-skills": {
       "command": "npx",
-      "args": ["--yes", "github:marcusmfrancis/skills#v0.1.0", "mcp"]
+      "args": ["--yes", "github:marcusmfrancis/skills#v0.1.1", "mcp"]
     }
   }
 }
@@ -25,7 +25,7 @@ To avoid fetching at connection time, clone this repository, run `npm ci`, and u
 - `mf_skills_read`: retrieve a skill with its exact `name`.
 - Resources: one `mf-skill:///mf-...` Markdown resource per skill.
 
-Try: "Find the MF skill for analyzing a UI recording, read it and use it to plan the analysis of my supplied video."
+Try: "Find the skill for analyzing a UI recording, read it and use it to plan the analysis of my supplied video."
 
 The server only reads the bundled catalog and skill files. It does not install skills, run their instructions, access your accounts or deploy. The client decides whether and how to use the returned guidance. No authentication secrets are required.
 
