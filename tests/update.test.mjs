@@ -7,7 +7,7 @@ import { join } from 'node:path';
 import { install,update,read,files,catalog,version } from '../src/catalog.mjs';
 
 test('managed updates preserve a backup and refuse changed, extra, untracked and symlinked files',async()=>{
- const dir=await mkdtemp(join(tmpdir(),'mf-update-')),name=catalog[0].name;
+ const fixture=await mkdtemp(join(tmpdir(),'mf-update-')),dir=join(fixture,'skills'),name=catalog[0].name;
  try {
   const target=await install(name,dir);
   const previous='Earlier release instructions';
@@ -18,6 +18,7 @@ test('managed updates preserve a backup and refuse changed, extra, untracked and
   await writeFile(receiptPath,JSON.stringify(receipt));
   const result=await update(name,dir);
   assert.equal(result.version,version);
+  assert.ok(result.backup.startsWith(join(fixture,'.mf-skills-backups')));
   assert.equal(await readFile(join(target,'SKILL.md'),'utf8'),await read(name));
   assert.equal(await readFile(join(result.backup,'SKILL.md'),'utf8'),previous);
   await writeFile(join(target,'SKILL.md'),'my edits');
@@ -32,7 +33,7 @@ test('managed updates preserve a backup and refuse changed, extra, untracked and
   await rm(join(target,'link'));
   await rm(join(target,'.mf-skills.json'));
   await assert.rejects(update(name,dir),/No managed installation/);
- }finally{await rm(dir,{recursive:true,force:true});}
+ }finally{await rm(fixture,{recursive:true,force:true});}
 });
 test('supporting file reading stays within the selected skill',async()=>{
  const name='mf-3d-threejs';

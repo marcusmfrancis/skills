@@ -8,6 +8,12 @@ Claude Code:
 claude mcp add --transport http skills https://marcusmfrancis.com/mcp
 ```
 
+Codex:
+
+```sh
+codex mcp add skills --url https://marcusmfrancis.com/mcp
+```
+
 For another client that supports remote MCP, add the URL through its MCP settings. No account is required to read the public library.
 
 Local server configuration for clients that support stdio:

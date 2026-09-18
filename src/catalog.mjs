@@ -67,7 +67,9 @@ export async function update(name,destination) {
   staging=await mkdtemp(join(base,`.${name}.update-`));
   const next=await install(name,staging);
   if(JSON.stringify(await inventory(target))!==JSON.stringify(before)) throw new Error('Files changed during update; no replacement made.');
-  const backup=join(base,`${name}.backup-${Date.now()}`);
+  const backupRoot=resolve(base,"..",".mf-skills-backups");
+  await mkdir(backupRoot,{recursive:true});
+  const backup=join(backupRoot,`${name}-${Date.now()}`);
   try {await lstat(backup);throw new Error('Backup path already exists.');} catch(e) {if(e.code!=='ENOENT') throw e;}
   await rename(target,backup);
   try {await rename(next,target);} catch(e) {await rename(backup,target);throw e;}
